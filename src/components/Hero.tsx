@@ -113,49 +113,39 @@ export default function Hero() {
                             initial="hidden"
                             animate="visible"
                             transition={{ delay: 0.35 }}
-                            className="mt-4 flex flex-wrap gap-3"
+                            className="mt-4 flex flex-col gap-3 sm:flex-row"
                         >
-                            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-
-                                {/* Download CV */}
-                                <a
-                                    href="/cv.pdf"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98]"
+                            {/* Download CV */}
+                            <a
+                                href="/cv.pdf"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98]"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5"
                                 >
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="currentColor"
-                                        className="h-4 w-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
-                                    >
-                                        <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
-                                    </svg>
+                                    <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
+                                </svg>
+                                Download CV
+                            </a>
 
-                                    <span className="transition-transform duration-300 group-hover:translate-x-0.5">
-                                        Download CV
-                                    </span>
-                                </a>
-
-                                {/* Email Me */}
-                                <a
-                                    href="mailto:h.s.elbeera@gmail.com"
-                                    className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-900 hover:shadow-[0_14px_35px_rgba(0,0,0,0.12)] active:translate-y-0 active:scale-[0.98]"
+                            {/* Email Me */}
+                            <a
+                                href="mailto:h.s.elbeera@gmail.com"
+                                className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-900 hover:shadow-[0_14px_35px_rgba(0,0,0,0.12)] active:translate-y-0 active:scale-[0.98]"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5"
                                 >
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        fill="currentColor"
-                                        className="h-4 w-4 text-slate-700 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
-                                    >
-                                        <path d="M4 4h16a2 2 0 0 1 2 2v.01L12 13 2 6.01V6a2 2 0 0 1 2-2Zm0 4.24 7.4 5.18a1 1 0 0 0 1.2 0L20 8.24V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8.24Z" />
-                                    </svg>
-
-                                    <span className="transition-transform duration-300 group-hover:translate-x-0.5">
-                                        Email Me
-                                    </span>
-                                </a>
-
-                            </div>
+                                    <path d="M4 4h16a2 2 0 0 1 2 2v.01L12 13 2 6.01V6a2 2 0 0 1 2-2Zm0 4.24 7.4 5.18a1 1 0 0 0 1.2 0L20 8.24V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8.24Z" />
+                                </svg>
+                                Email Me
+                            </a>
                         </motion.div>
                     </div>
 
