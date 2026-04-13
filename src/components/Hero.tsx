@@ -28,7 +28,7 @@ export default function Hero() {
                             transition={{ delay: 0.05 }}
                             className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500"
                         >
-                            Senior Full Stack Engineer
+                            Senior Software Engineer
                         </motion.p>
 
                         <motion.h1
@@ -38,7 +38,7 @@ export default function Hero() {
                             transition={{ delay: 0.1 }}
                             className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
                         >
-                            Hothyfa
+                            Hothyfa Elbeera
                         </motion.h1>
 
                         <motion.p
@@ -48,9 +48,7 @@ export default function Hero() {
                             transition={{ delay: 0.15 }}
                             className="mt-6 text-base leading-7 text-slate-600 sm:text-lg"
                         >
-                            I build scalable web platforms, backend APIs, and AI-assisted systems
-                            with a focus on strong architecture, pragmatic delivery, and real
-                            product value.
+                            I design and build scalable backend systems and AI-driven applications, combining strong engineering fundamentals with real-world problem solving.
                         </motion.p>
 
                         <motion.p
@@ -60,8 +58,7 @@ export default function Hero() {
                             transition={{ delay: 0.2 }}
                             className="mt-4 text-base leading-7 text-slate-600 sm:text-lg"
                         >
-                            My experience spans frontend engineering, backend services, cloud
-                            delivery, and complex workflows in high-trust environments.
+                            My experience spans cloud-native platforms, distributed systems, and AI-powered workflows, including delivering production systems in high-trust environments such as the UK Ministry of Justice.
                         </motion.p>
 
                         {/* Primary buttons */}

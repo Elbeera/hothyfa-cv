@@ -12,21 +12,15 @@ export default function Home() {
       <Section id="summary" title="Executive Summary">
         <div className="max-w-3xl space-y-5 text-slate-700">
           <p className="text-base leading-7 sm:text-lg">
-            I’m a Senior Full Stack Engineer with experience delivering modern
-            web applications, backend APIs, and AI-assisted workflows across
-            complex product environments.
+            Senior Software Engineer with 6+ years of experience designing and scaling cloud-native, distributed systems across AWS and Azure. Proven track record of leading end-to-end development of high-performance platforms serving thousands of users, delivering measurable improvements in performance, scalability, and cost efficiency.
           </p>
 
           <p className="text-base leading-7 sm:text-lg">
-            My work combines hands-on engineering with pragmatic technical
-            decision-making across frontend systems, backend services, cloud
-            delivery, and application architecture.
+            Currently leading the development of an AI-powered document processing system within the UK Ministry of Justice, specialising in Natural Language Processing (NLP), intelligent automation, and production-grade AI system design.
           </p>
 
           <p className="text-base leading-7 sm:text-lg">
-            I’m particularly well suited to roles where strong delivery,
-            end-to-end ownership, and the ability to work through ambiguity are
-            as important as technical depth.
+            Expert in Node.js, Python, and TypeScript, with strong experience in microservices architectures, DevOps automation, and secure system design. Passionate about building scalable AI-driven systems and transitioning into advanced AI engineering and architecture roles.
           </p>
         </div>
       </Section>
@@ -161,7 +155,7 @@ export default function Home() {
           <article>
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
               <h3 className="text-lg font-semibold text-slate-900">
-                Senior Full Stack Engineer (Contract)
+                Senior Software Engineer (AI Systems)
               </h3>
               <p className="text-sm text-slate-500">2026 — Present</p>
             </div>
@@ -172,36 +166,39 @@ export default function Home() {
 
             <div className="mt-5 max-w-3xl space-y-3 text-[15px] leading-7 text-slate-700 sm:text-base">
               <p>
-                Sole engineer responsible for the design and delivery of an
-                AI-assisted document redaction system for sensitive Subject Access
-                Request (SAR) workflows, replacing manual processes with scalable,
-                automated pipelines.
+                Sole Software Engineer responsible for the design, development, and delivery of Justice Redact, an AI-assisted system for automating the redaction of sensitive information from legal Subject Access Request (SAR) documents. The platform replaces manual redaction workflows with scalable, intelligent document processing, improving efficiency, accuracy, and compliance.
+              </p>
+              <p>
+                Working independently while collaborating with product managers, data scientists, designers, and DevOps specialists, I lead all engineering decisions across system architecture, backend development, and AI integration, ensuring a production-ready and scalable solution.
               </p>
 
               <ul className="list-disc space-y-2 pl-5">
                 <li>
-                  Led end-to-end system architecture across backend services, AI
-                  processing pipelines, and user-facing workflows.
+                  Led end-to-end engineering of an AI-powered document redaction system, from initial architecture design through to implementation and deployment.
                 </li>
                 <li>
-                  Built scalable document processing pipelines using Python
-                  (FastAPI), Node.js, and NLP tooling (Presidio, AWS Comprehend).
+                  Designed and developed scalable backend services using Python (FastAPI) and Node.js to support AI-driven document processing workflows.
                 </li>
                 <li>
-                  Designed a modular architecture separating AI processing from core
-                  services to support scalability and independent model evolution.
+                  Built AI-assisted redaction pipelines integrating PyMuPDF, Microsoft Presidio, and AWS Comprehend to detect and redact sensitive entities within unstructured legal documents.
                 </li>
                 <li>
-                  Implemented secure document storage and audit-ready data models
-                  using AWS S3 and relational databases.
+                  Architected modular system separating backend services from AI processing components, enabling scalability and independent model evolution.
                 </li>
                 <li>
-                  Delivered APIs supporting ingestion, processing, review workflows,
-                  and export functionality.
+                  Deigned and implemented data storage strategies using AWS S3 for document storage and relational databases for structured document state, versioning, and audit tracking.
                 </li>
                 <li>
-                  Contributed to infrastructure decisions, performance benchmarking,
-                  and cost optimisation strategies for large-scale document handling.
+                  Developed APIs supporting document ingestion, processing, review workflows, and export functionality for end users.
+                </li>
+                <li>
+                  Collaborated with data scientists for integrate and optimise NLP models for entity recognition and document classification.
+                </li>
+                <li>
+                  Ensured strict compliance with data protection, security, and governance standards when handling highly sensitive legal data.
+                </li>
+                <li>
+                  Conducted performance benchmarking and contributed to infrastructure and cost optimisation strategies for scalable AI processing.
                 </li>
               </ul>
             </div>
@@ -211,7 +208,7 @@ export default function Home() {
           <article>
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
               <h3 className="text-lg font-semibold text-slate-900">
-                Senior Full Stack Developer
+                Software Engineer
               </h3>
               <p className="text-sm text-slate-500">2025 — 2026</p>
             </div>
@@ -222,28 +219,27 @@ export default function Home() {
 
             <div className="mt-5 max-w-3xl space-y-3 text-[15px] leading-7 text-slate-700 sm:text-base">
               <p>
-                Delivered core backend and full stack systems for a fast-scaling
-                claims platform, focusing on API design, scalability, and secure
-                data handling.
+                Joined a fast-scaling software company focused on digital claim management solutions, leading the end-to-end development of core products from initial concept through architecture and deployment. Lead design and technology decisions, ensuring scalable, high-performance solutions. Collaborate with cross-functional teams to optimise systems, streamline processes, and deliver projects on time while maintaining high standards.
               </p>
 
               <ul className="list-disc space-y-2 pl-5">
                 <li>
-                  Designed and built a conflict checker REST API querying Firestore
-                  datasets across multiple funnels to identify potential claim
-                  conflicts.
+                  Designed and implemented scalable, cost-optimised architectures across AWS and Azure, improving performance and reducing operational costs.
                 </li>
                 <li>
-                  Architected cloud-native solutions across AWS and Azure, improving
-                  system performance and reducing operational costs.
+                  Designed APIs with strict validation and encryption best practices to prevent vulnerabilities.
                 </li>
                 <li>
-                  Built containerised microservices using Node.js and Docker to
-                  improve reliability and scalability.
+                  Designed and deployed Docker-based containerised microservices using Node.js, improving scalability, reliability, and cost effective.
                 </li>
                 <li>
-                  Implemented secure API patterns with validation and encryption to
-                  reduce system vulnerabilities.
+                  Built and deployed cloud-native applications using Node.js, Express, Firebase Functions, and Firestore enabling fast and secure API-driven systems.
+                </li>
+                <li>
+                  Utilised Vue.js for dynamic and performant front-end development, optimising user experience and responsiveness.
+                </li>
+                <li>
+                  Implemented monitoring and logging solutions to track application performance and proactively identify system issues.
                 </li>
               </ul>
             </div>
@@ -264,22 +260,68 @@ export default function Home() {
 
             <div className="mt-5 max-w-3xl space-y-3 text-[15px] leading-7 text-slate-700 sm:text-base">
               <p>
-                Core engineer building a multi-service platform covering ride-hailing,
-                food delivery, and parcel logistics across web and mobile.
+                Key contributor at an early stage startup building a multi-service platform for ride hailing, food delivery, and parcel logistics. I played a key role in designing and developing the platform from the ground up, building both Web and Mobile applications for ride-hailing, food delivery, and parcel services. Working alongside another Full Stack Developer, I implemented real-time tracking, secure authentication, and automated CI/CD pipelines to enhance system performance, scalability, and user experience.
               </p>
 
               <ul className="list-disc space-y-2 pl-5">
                 <li>
-                  Developed full-stack systems using React, React Native, Node.js,
-                  and MongoDB.
+                  Designed and developed a multi-service platform for ride-requesting, food delivery, and parcel services using React, React Native, Node.js, Fastify, and MongoDB.
                 </li>
                 <li>
-                  Built real-time tracking functionality improving user experience
-                  and engagement.
+                  Implemented secure authentication, authorisation, and data protection mechanisms to ensure compliance and user safety.
                 </li>
                 <li>
-                  Implemented CI/CD pipelines to streamline deployment and reduce
-                  downtime.
+                  Built and deployed real-time tracking systems, improving user engagement.
+                </li>
+                <li>
+                  Developed cross-platform Web and Mobile applications, ensuring seamless user experience across devices.
+                </li>
+                <li>
+                  Integrated push notification services, boosting user retention and engagement.
+                </li>
+                <li>
+                  Developed automated CI/CD pipelines, streamlining feature deployments and reducing downtime.
+                </li>
+                <li>
+                  Maintained comprehensive technical documentation.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          {/* UNION REALTIME */}
+          <article>
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 className="text-lg font-semibold text-slate-900">
+                Full Stack Developer
+              </h3>
+              <p className="text-sm text-slate-500">2024 — 2025</p>
+            </div>
+
+            <p className="mt-1 text-sm font-medium text-slate-600">
+              Union Realtime
+            </p>
+
+            <div className="mt-5 max-w-3xl space-y-3 text-[15px] leading-7 text-slate-700 sm:text-base">
+              <p>
+                I played a key role in developing and optimising scalable software applications using Angular, TypeScript, and Python, focusing on performance, reliability, and maintainability. I designed and implemented REST APIs, optimised database queries, and enhanced system stability through performance tuning.
+              </p>
+
+              <ul className="list-disc space-y-2 pl-5">
+                <li>
+                  Developed and optimised scalable software applications using Angular, TypeScript, Python and Node.js ensuring high performance and reliability.
+                </li>
+                <li>
+                  Designed and implemented REST APIs with Nest.js, improving modularity and maintainability.
+                </li>
+                <li>
+                  Optimised TSQL database queries, enhancing eﬃciency and response times for better user experience.
+                </li>
+                <li>
+                  Implemented CI/CD pipelines and automated deployment processes, significantly reducing release cycle time.
+                </li>
+                <li>
+                  Created and maintained comprehensive technical documentation, ensuring clarity in API usage, system design, and best practices.
                 </li>
               </ul>
             </div>
@@ -362,100 +404,98 @@ export default function Home() {
         <div className="max-w-3xl space-y-6">
 
           <p className="text-base leading-7 text-slate-700 sm:text-lg">
-            I’m open to senior full stack engineering opportunities where I can
-            contribute through strong delivery, technical ownership, and practical
-            architecture thinking.
+          I’m open to senior software engineering opportunities where I can contribute through strong technical ownership, scalable system design, and building AI-driven applications in real-world environments.
           </p>
 
           {/* Actions */}
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
 
-  {/* Download CV */}
-  <a
-    href="/cv.pdf"
-    target="_blank"
-    rel="noreferrer"
-    className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98]"
-  >
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="h-4 w-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
-    >
-      <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
-    </svg>
+            {/* Download CV */}
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98]"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="h-4 w-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
+              >
+                <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
+              </svg>
 
-    <span className="transition-transform duration-300 group-hover:translate-x-0.5">
-      Download CV
-    </span>
-  </a>
+              <span className="transition-transform duration-300 group-hover:translate-x-0.5">
+                Download CV
+              </span>
+            </a>
 
-  {/* Email Me */}
-  <a
-    href="mailto:h.s.elbeera@gmail.com"
-    className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-900 hover:shadow-[0_14px_35px_rgba(0,0,0,0.12)] active:translate-y-0 active:scale-[0.98]"
-  >
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="h-4 w-4 text-slate-700 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
-    >
-      <path d="M4 4h16a2 2 0 0 1 2 2v.01L12 13 2 6.01V6a2 2 0 0 1 2-2Zm0 4.24 7.4 5.18a1 1 0 0 0 1.2 0L20 8.24V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8.24Z" />
-    </svg>
+            {/* Email Me */}
+            <a
+              href="mailto:h.s.elbeera@gmail.com"
+              className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-900 hover:shadow-[0_14px_35px_rgba(0,0,0,0.12)] active:translate-y-0 active:scale-[0.98]"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="h-4 w-4 text-slate-700 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
+              >
+                <path d="M4 4h16a2 2 0 0 1 2 2v.01L12 13 2 6.01V6a2 2 0 0 1 2-2Zm0 4.24 7.4 5.18a1 1 0 0 0 1.2 0L20 8.24V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8.24Z" />
+              </svg>
 
-    <span className="transition-transform duration-300 group-hover:translate-x-0.5">
-      Email Me
-    </span>
-  </a>
+              <span className="transition-transform duration-300 group-hover:translate-x-0.5">
+                Email Me
+              </span>
+            </a>
 
-</div>
+          </div>
 
           {/* Links */}
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-  <a
-    href="https://github.com/Elbeera"
-    target="_blank"
-    rel="noreferrer"
-    className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#181717] px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_rgba(24,23,23,0.18)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(24,23,23,0.32)]"
-  >
-    <span className="relative">
-      <span className="absolute inset-0 rounded-full bg-white/10 blur-md opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="relative h-4 w-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
-      >
-        <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.2-.02-2.17-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.18a11.1 11.1 0 0 1 5.81 0c2.21-1.49 3.18-1.18 3.18-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.82 1.19 3.08 0 4.43-2.71 5.4-5.29 5.69.41.36.78 1.08.78 2.18 0 1.58-.01 2.85-.01 3.24 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
-      </svg>
-    </span>
-    <span className="text-white transition-transform duration-300 group-hover:translate-x-0.5">
-      GitHub
-    </span>
-  </a>
+            <a
+              href="https://github.com/Elbeera"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#181717] px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_rgba(24,23,23,0.18)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(24,23,23,0.32)]"
+            >
+              <span className="relative">
+                <span className="absolute inset-0 rounded-full bg-white/10 blur-md opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="relative h-4 w-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
+                >
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.2-.02-2.17-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.18a11.1 11.1 0 0 1 5.81 0c2.21-1.49 3.18-1.18 3.18-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.82 1.19 3.08 0 4.43-2.71 5.4-5.29 5.69.41.36.78 1.08.78 2.18 0 1.58-.01 2.85-.01 3.24 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg>
+              </span>
+              <span className="text-white transition-transform duration-300 group-hover:translate-x-0.5">
+                GitHub
+              </span>
+            </a>
 
-  <a
-    href="https://www.linkedin.com/in/hothyfa-elbeera/"
-    target="_blank"
-    rel="noreferrer"
-    className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#0A66C2] px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_rgba(10,102,194,0.22)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#004182] hover:shadow-[0_16px_40px_rgba(10,102,194,0.34)]"
-  >
-    <span className="relative">
-      <span className="absolute inset-0 rounded-full bg-white/15 blur-md opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="relative h-4 w-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
-      >
-        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z" />
-      </svg>
-    </span>
-    <span className="text-white transition-transform duration-300 group-hover:translate-x-0.5">
-      LinkedIn
-    </span>
-  </a>
-</div>
+            <a
+              href="https://www.linkedin.com/in/hothyfa-elbeera/"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#0A66C2] px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_rgba(10,102,194,0.22)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#004182] hover:shadow-[0_16px_40px_rgba(10,102,194,0.34)]"
+            >
+              <span className="relative">
+                <span className="absolute inset-0 rounded-full bg-white/15 blur-md opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="relative h-4 w-4 text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
+                >
+                  <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+                </svg>
+              </span>
+              <span className="text-white transition-transform duration-300 group-hover:translate-x-0.5">
+                LinkedIn
+              </span>
+            </a>
+          </div>
 
         </div>
       </Section>
