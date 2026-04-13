@@ -4,10 +4,10 @@ export default function Hero() {
     return (
         <section className="px-6 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
             <div className="mx-auto w-full max-w-6xl">
-                
+
                 {/* FLEX CONTAINER */}
                 <div className="flex flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between">
-                    
+
                     {/* LEFT (TEXT) */}
                     <div className="max-w-3xl">
                         <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
@@ -48,13 +48,15 @@ export default function Hero() {
                     </div>
 
                     {/* RIGHT (PHOTO) */}
-                    <div className="flex justify-center lg:justify-end">
+                    <div className="relative flex justify-center lg:justify-end">
+                        <div className="absolute inset-0 rounded-full bg-slate-200 blur-2xl opacity-30 scale-110"></div>
+
                         <Image
-                            src="/profile.png"
+                            src="/profile.jpg"
                             alt="Hothyfa profile"
                             width={320}
                             height={320}
-                            className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-xl border-4 border-white"
+                            className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-xl border-4 border-white"
                             priority
                         />
                     </div>
