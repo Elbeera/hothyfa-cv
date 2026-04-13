@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hothyfa | Senior Full Stack Engineer",
+  title: "Hothyfa | Senior Software Engineer",
   icons: {
     icon: "/favicon.png",
   },
   description:
-    "Senior Full Stack Engineer building scalable web platforms, backend APIs, and AI-assisted systems.",
+    "Senior Software Engineer building scalable web platforms, backend APIs, and AI-assisted systems.",
 };
 
 export default function RootLayout({

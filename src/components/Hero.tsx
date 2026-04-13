@@ -40,17 +40,6 @@ export default function Hero() {
                         >
                             Hothyfa Elbeera
                         </motion.h1>
-
-                        <motion.p
-                            variants={fadeUp}
-                            initial="hidden"
-                            animate="visible"
-                            transition={{ delay: 0.15 }}
-                            className="mt-6 text-base leading-7 text-slate-600 sm:text-lg"
-                        >
-                            I design and build scalable backend systems and AI-driven applications, combining strong engineering fundamentals with real-world problem solving.
-                        </motion.p>
-
                         <motion.p
                             variants={fadeUp}
                             initial="hidden"
@@ -58,7 +47,9 @@ export default function Hero() {
                             transition={{ delay: 0.2 }}
                             className="mt-4 text-base leading-7 text-slate-600 sm:text-lg"
                         >
-                            My experience spans cloud-native platforms, distributed systems, and AI-powered workflows, including delivering production systems in high-trust environments such as the UK Ministry of Justice.
+                            Currently leading AI-powered document processing work for the UK Ministry of
+                            Justice, specialising in production-grade AI workflows, cloud-native systems,
+                            and high-trust software delivery.
                         </motion.p>
 
                         {/* Primary buttons */}

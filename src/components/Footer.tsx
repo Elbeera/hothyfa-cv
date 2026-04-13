@@ -7,7 +7,7 @@ export default function Footer() {
           </p>
   
           <p className="text-sm text-slate-500">
-            Senior Full Stack Engineer
+            Senior Software Engineer
           </p>
         </div>
       </footer>
