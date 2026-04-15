@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -40,8 +40,8 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                   AI-assisted legal document processing
                 </h3>
                 <p className="mt-3 text-base leading-7 text-slate-700">
@@ -54,7 +54,7 @@ export default function Home() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -64,8 +64,8 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Sole-engineer ownership
                 </h3>
                 <p className="mt-3 text-base leading-7 text-slate-700">
@@ -79,7 +79,7 @@ export default function Home() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -89,8 +89,8 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Backend systems and API delivery
                 </h3>
                 <p className="mt-3 text-base leading-7 text-slate-700">
@@ -103,7 +103,7 @@ export default function Home() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -113,8 +113,8 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+              <div className="flex-1">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Cloud-native architecture
                 </h3>
                 <p className="mt-3 text-base leading-7 text-slate-700">
@@ -134,21 +134,20 @@ export default function Home() {
             <div className="flex items-start gap-4">
 
               {/* Icon */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-50">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-5 w-5 text-orange-500"
-                >
-                  {/* cloud icon */}
-                  <path d="M6 19a4 4 0 0 1 0-8 5 5 0 0 1 9.7-1.5A3.5 3.5 0 1 1 17.5 19H6Z" />
-                </svg>
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-orange-50">
+              <svg
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  className="h-5 w-5 text-orange-500"
+>
+  <path d="M7.5 18.5A4.5 4.5 0 1 1 8 9.6a5.5 5.5 0 0 1 10.6 1.7A3.7 3.7 0 1 1 18 18.5H7.5Z" />
+</svg>
               </div>
 
               {/* Content */}
               <div className="flex-1">
                 <div className="flex items-start justify-between gap-4">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                     AWS Certified Cloud Practitioner
                   </h3>
                   <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
@@ -169,7 +168,7 @@ export default function Home() {
             <div className="flex items-start gap-4">
 
               {/* Icon */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-50">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-orange-50">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -183,7 +182,7 @@ export default function Home() {
               {/* Content */}
               <div className="flex-1">
                 <div className="flex items-start justify-between gap-4">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                     AWS Certified AI Practitioner
                   </h3>
                   <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
@@ -204,7 +203,7 @@ export default function Home() {
             <div className="flex items-start gap-4">
 
               {/* Icon */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-50">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -218,7 +217,7 @@ export default function Home() {
               {/* Content */}
               <div className="flex-1">
                 <div className="flex items-start justify-between gap-4">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                     React & React Native Certification
                   </h3>
                   <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
@@ -253,7 +252,7 @@ export default function Home() {
               {/* Content */}
               <div className="flex-1">
                 <div className="flex items-start justify-between gap-4">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                     Querying Microsoft SQL Server with Transact-SQL
                   </h3>
                   <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
@@ -288,7 +287,7 @@ export default function Home() {
               {/* Content */}
               <div className="flex-1">
                 <div className="flex items-start justify-between gap-4">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                     Node.js, Express.js and MongoDB Certification
                   </h3>
                   <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
@@ -562,7 +561,7 @@ export default function Home() {
           {/* Frontend */}
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -573,7 +572,7 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div>
+              <div className="flex-1">
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Frontend Systems
                 </h3>
@@ -588,7 +587,7 @@ export default function Home() {
           {/* Backend */}
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -599,7 +598,7 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div>
+              <div className="flex-1">
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Backend & APIs
                 </h3>
@@ -614,7 +613,7 @@ export default function Home() {
           {/* Cloud */}
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -625,7 +624,7 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div>
+              <div className="flex-1">
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Cloud & Delivery
                 </h3>
@@ -640,7 +639,7 @@ export default function Home() {
           {/* AI */}
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -651,7 +650,7 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div>
+              <div className="flex-1">
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
                   AI-Assisted Workflows
                 </h3>
