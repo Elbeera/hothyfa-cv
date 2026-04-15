@@ -47,9 +47,7 @@ export default function Hero() {
                             transition={{ delay: 0.2 }}
                             className="mt-4 text-base leading-7 text-slate-600 sm:text-lg"
                         >
-                            Currently leading AI-powered document processing work for the UK Ministry of
-                            Justice, specialising in production-grade AI workflows, cloud-native systems,
-                            and high-trust software delivery.
+                            Currently leading AI-powered document processing work for the UK Ministry of Justice, specialising in production-grade AI workflows, cloud-native systems, and high-trust software delivery.
                         </motion.p>
 
                         {/* Primary buttons */}

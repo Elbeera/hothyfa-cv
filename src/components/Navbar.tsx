@@ -47,7 +47,12 @@ export default function Navbar() {
                         aria-label="Toggle navigation menu"
                         aria-expanded={isOpen}
                         onClick={() => setIsOpen((prev) => !prev)}
-                        className="inline-flex items-center justify-center rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-900 transition hover:border-slate-900 md:hidden"
+                        className={`inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium transition md:hidden
+                            ${isOpen
+                                ? "bg-slate-900 text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)]"
+                                : "border border-slate-300 text-slate-900 hover:border-slate-900"
+                            }
+                        `}
                     >
                         Menu
                     </button>

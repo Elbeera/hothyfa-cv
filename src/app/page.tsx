@@ -29,31 +29,28 @@ export default function Home() {
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-semibold text-slate-900">
-              AI-driven document automation
+              AI-assisted legal document processing
             </p>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Designed and delivered AI-assisted redaction workflows for sensitive
-              legal documents, replacing manual processes with scalable automation.
+              Leading engineering work on AI-powered document processing and redaction workflows for the UK Ministry of Justice.
             </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-semibold text-slate-900">
-              End-to-end system ownership
+              Sole-engineer ownership
             </p>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Led architecture and delivery across frontend, backend, AI pipelines,
-              and cloud infrastructure as a sole engineer.
+              Driving architecture, backend services, and delivery decisions across a sensitive production-focused system in a high-trust environment.
             </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-semibold text-slate-900">
-              Scalable API systems
+              Backend systems and API delivery
             </p>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Built production APIs handling operational data search and conflict
-              detection across distributed datasets.
+              Built production APIs and operational services, including conflict checking across live datasets and multi-funnel business workflows.
             </p>
           </div>
 
@@ -62,8 +59,7 @@ export default function Home() {
               Cloud-native architecture
             </p>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Designed systems across AWS and Azure with focus on scalability,
-              performance, and cost efficiency.
+              Experience designing scalable systems across AWS and Azure with focus on maintainability, performance, and delivery speed.
             </p>
           </div>
         </div>
@@ -72,78 +68,178 @@ export default function Home() {
       <Section id="certifications" title="Certifications">
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
-            <div className="flex items-start justify-between gap-4">
-              <h3 className="text-base font-semibold text-slate-900">
-                AWS Certified Cloud Practitioner
-              </h3>
-              <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-                AWS
-              </span>
+            <div className="flex items-start gap-4">
+
+              {/* Icon */}
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-50">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5 text-orange-500"
+                >
+                  {/* cloud icon */}
+                  <path d="M6 19a4 4 0 0 1 0-8 5 5 0 0 1 9.7-1.5A3.5 3.5 0 1 1 17.5 19H6Z" />
+                </svg>
+              </div>
+
+              {/* Content */}
+              <div className="flex-1">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-base font-semibold text-slate-900">
+                    AWS Certified Cloud Practitioner
+                  </h3>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    AWS
+                  </span>
+                </div>
+
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  Foundation certification covering AWS cloud concepts, core services,
+                  security, architecture, pricing, and support.
+                </p>
+              </div>
+
             </div>
-            <p className="mt-3 text-sm leading-6 text-slate-600">
-              Foundation certification covering AWS cloud concepts, core services,
-              security, architecture, pricing, and support.
-            </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
-            <div className="flex items-start justify-between gap-4">
-              <h3 className="text-base font-semibold text-slate-900">
-                AWS Certified AI Practitioner
-              </h3>
-              <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-                AWS
-              </span>
+            <div className="flex items-start gap-4">
+
+              {/* Icon */}
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-50">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5 text-orange-500"
+                >
+                  {/* AI / nodes icon */}
+                  <path d="M12 4a3 3 0 1 1-2.83 4H7a2 2 0 1 0 0 4h2.17A3 3 0 1 1 12 20a3 3 0 0 1-2.83-4H7a4 4 0 1 1 0-8h2.17A3 3 0 0 1 12 4Z" />
+                </svg>
+              </div>
+
+              {/* Content */}
+              <div className="flex-1">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-base font-semibold text-slate-900">
+                    AWS Certified AI Practitioner
+                  </h3>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    AWS
+                  </span>
+                </div>
+
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  Certification supporting practical understanding of AI and machine
+                  learning concepts in cloud-based systems and solutions.
+                </p>
+              </div>
+
             </div>
-            <p className="mt-3 text-sm leading-6 text-slate-600">
-              Certification supporting practical understanding of AI and machine
-              learning concepts in cloud-based systems and solutions.
-            </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
-            <div className="flex items-start justify-between gap-4">
-              <h3 className="text-base font-semibold text-slate-900">
-                React & React Native Certification
-              </h3>
-              <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-                Frontend
-              </span>
+            <div className="flex items-start gap-4">
+
+              {/* Icon */}
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5 text-blue-500"
+                >
+                  {/* atom icon */}
+                  <path d="M12 2c2.5 0 4.8 2.3 6.2 5.9 1.4 3.6 1.4 7.6 0 11.2C16.8 21.7 14.5 24 12 24s-4.8-2.3-6.2-5.9c-1.4-3.6-1.4-7.6 0-11.2C7.2 4.3 9.5 2 12 2Zm0 2c-1.7 0-3.5 1.9-4.7 5-1.2 3.1-1.2 6.5 0 9.6 1.2 3.1 3 5 4.7 5s3.5-1.9 4.7-5c1.2-3.1 1.2-6.5 0-9.6C15.5 5.9 13.7 4 12 4Z" />
+                </svg>
+              </div>
+
+              {/* Content */}
+              <div className="flex-1">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-base font-semibold text-slate-900">
+                    React & React Native Certification
+                  </h3>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    Frontend
+                  </span>
+                </div>
+
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  Supports frontend and cross-platform development capability across web
+                  and mobile application delivery.
+                </p>
+              </div>
+
             </div>
-            <p className="mt-3 text-sm leading-6 text-slate-600">
-              Supports frontend and cross-platform development capability across web
-              and mobile application delivery.
-            </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
-            <div className="flex items-start justify-between gap-4">
-              <h3 className="text-base font-semibold text-slate-900">
-                Querying Microsoft SQL Server with Transact-SQL
-              </h3>
-              <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-                SQL
-              </span>
+            <div className="flex items-start gap-4">
+
+              {/* Icon */}
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-50">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5 text-indigo-500"
+                >
+                  {/* database icon */}
+                  <path d="M12 3C7 3 3 4.8 3 7v10c0 2.2 4 4 9 4s9-1.8 9-4V7c0-2.2-4-4-9-4Zm0 2c4.4 0 7 .9 7 2s-2.6 2-7 2-7-.9-7-2 2.6-2 7-2Zm0 6c4.4 0 7-.9 7-2v3c0 1.1-2.6 2-7 2s-7-.9-7-2V9c0 1.1 2.6 2 7 2Zm0 5c4.4 0 7-.9 7-2v3c0 1.1-2.6 2-7 2s-7-.9-7-2v-3c0 1.1 2.6 2 7 2Z" />
+                </svg>
+              </div>
+
+              {/* Content */}
+              <div className="flex-1">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-base font-semibold text-slate-900">
+                    Querying Microsoft SQL Server with Transact-SQL
+                  </h3>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    SQL
+                  </span>
+                </div>
+
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  Reinforces SQL querying and relational database capability in
+                  production-oriented systems.
+                </p>
+              </div>
+
             </div>
-            <p className="mt-3 text-sm leading-6 text-slate-600">
-              Reinforces SQL querying and relational database capability in
-              production-oriented systems.
-            </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md sm:col-span-2">
-            <div className="flex items-start justify-between gap-4">
-              <h3 className="text-base font-semibold text-slate-900">
-                Node.js, Express.js and MongoDB Certification
-              </h3>
-              <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-                Backend
-              </span>
+            <div className="flex items-start gap-4">
+
+              {/* Icon */}
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-50">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5 text-emerald-500"
+                >
+                  {/* server / backend icon */}
+                  <path d="M4 4h16v6H4V4Zm0 8h16v6H4v-6Zm2-6v2h2V6H6Zm0 8v2h2v-2H6Z" />
+                </svg>
+              </div>
+
+              {/* Content */}
+              <div className="flex-1">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-base font-semibold text-slate-900">
+                    Node.js, Express.js and MongoDB Certification
+                  </h3>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    Backend
+                  </span>
+                </div>
+
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  Supports backend API development and full stack JavaScript application
+                  delivery using modern service patterns.
+                </p>
+              </div>
+
             </div>
-            <p className="mt-3 text-sm leading-6 text-slate-600">
-              Supports backend API development and full stack JavaScript application
-              delivery using modern service patterns.
-            </p>
           </div>
         </div>
       </Section>
@@ -332,26 +428,67 @@ export default function Home() {
 
       <Section id="projects" title="Featured Projects">
         <div className="grid gap-5">
-          <div className="rounded-2xl border border-slate-200 p-6">
-            <h3 className="text-lg font-semibold text-slate-900">
-              Justice Redact
-            </h3>
-            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
-              AI-assisted SAR redaction workflow exploring document ingestion,
-              entity identification, review flows, manual control, and export
-              support for sensitive operational use cases.
-            </p>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5 text-slate-700"
+                >
+                  <path d="M7 3h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm6 1.5V9h4.5" />
+                </svg>
+              </div>
+
+              <div className="flex-1">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-lg font-semibold text-slate-900">
+                    Justice Redact
+                  </h3>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    AI Workflow
+                  </span>
+                </div>
+
+                <p className="mt-3 text-base leading-7 text-slate-700">
+                  AI-assisted SAR redaction platform for sensitive legal document
+                  workflows, covering ingestion, entity detection, review tooling,
+                  manual control, and export support in a high-trust environment.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 p-6">
-            <h3 className="text-lg font-semibold text-slate-900">
-              Conflict Checker REST API
-            </h3>
-            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
-              Backend service built to identify potential conflicts by searching
-              operational data across multiple funnels, designed for practical
-              internal use and dependable API behaviour.
-            </p>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-50">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5 text-emerald-600"
+                >
+                  <path d="M6 3h9l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm8 1.5V7h2.5M8 11h8v2H8v-2Zm0 4h8v2H8v-2Z" />
+                </svg>
+              </div>
+
+              <div className="flex-1">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-lg font-semibold text-slate-900">
+                    ClaimsGate Document Engine
+                  </h3>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    Cost Saving
+                  </span>
+                </div>
+
+                <p className="mt-3 text-base leading-7 text-slate-700">
+                  Internal document conversion service built to transform Word
+                  documents into PDF at scale, running as a PM2-managed process on an
+                  Azure virtual machine and helping reduce Adobe-related costs by up
+                  to £15,000 per month.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </Section>
@@ -404,7 +541,7 @@ export default function Home() {
         <div className="max-w-3xl space-y-6">
 
           <p className="text-base leading-7 text-slate-700 sm:text-lg">
-          I’m open to senior software engineering opportunities where I can contribute through strong technical ownership, scalable system design, and building AI-driven applications in real-world environments.
+            I’m open to senior software engineering opportunities where I can contribute through strong technical ownership, scalable system design, and building AI-driven applications in real-world environments.
           </p>
 
           {/* Actions */}
