@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Section from "@/components/Section";
+import AskCv from "@/components/AskCv";
 
 type TextCard = {
   title: string;
@@ -275,6 +276,10 @@ export default function Home() {
     <main className="min-h-screen bg-white text-slate-900">
       <Navbar />
       <Hero />
+
+      <div>
+        <AskCv />
+      </div>
 
       <Section id="summary" title="Executive Summary">
         <div className="max-w-3xl space-y-5 text-slate-700">
