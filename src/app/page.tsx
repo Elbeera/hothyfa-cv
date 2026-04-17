@@ -277,9 +277,9 @@ export default function Home() {
       <Navbar />
       <Hero />
 
-      <div>
+      <Section id="ask-cv" title="Ask my CV">
         <AskCv />
-      </div>
+      </Section>
 
       <Section id="summary" title="Executive Summary">
         <div className="max-w-3xl space-y-5 text-slate-700">

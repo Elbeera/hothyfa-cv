@@ -224,12 +224,12 @@ export default function AskCv() {
   };
 
   return (
-    <section
+    <div
       style={{
         width: "100%",
         maxWidth: "920px",
-        margin: "48px auto",
-        padding: "0 20px",
+        margin: "0 auto",
+        padding: 0,
       }}
     >
       <div
@@ -468,6 +468,6 @@ export default function AskCv() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

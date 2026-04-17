@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 const navItems = [
+    { label: "Ask CV", href: "#ask-cv" },
     { label: "Summary", href: "#summary" },
     { label: "Impact", href: "#impact" },
     { label: "Certifications", href: "#certifications" },
