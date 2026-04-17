@@ -7,6 +7,6 @@ cd /home/ubuntu/hothyfa-cv
 rm -f /home/ubuntu/package-lock.json
 
 # Public API URL for the AI CV Assistant
-export NEXT_PUBLIC_AI_CV_API_URL=http://98.93.23.43:8000
+export NEXT_PUBLIC_AI_CV_API_URL=https://api.hothyfa.com
 
 npm run build
