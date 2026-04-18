@@ -241,8 +241,9 @@ function MarkdownMessage({
 export default function AskCv() {
   const starterPrompts = useMemo(
     () => [
-      "Hi, how can you help me?",
+      "Hi",
       "Who are you?",
+      "How can you help me?",
       "Who is Hothyfa Elbeera?",
       "What is Justice Redact?",
       "What AI experience does Hothyfa have?",
