@@ -8,21 +8,21 @@ export default function Hero() {
             <div className="mx-auto max-w-6xl">
                 <div className="flex flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between">
                     <div className="max-w-3xl">
-                        <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
+                        <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
                             Senior Software Engineer
                         </p>
 
-                        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+                        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-slate-100">
                             Hothyfa Elbeera
                         </h1>
-                        <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg">
+                        <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg dark:text-slate-300">
                             Currently leading AI-powered document processing work for the UK Ministry of Justice, specialising in production-grade AI workflows, cloud-native systems, and high-trust software delivery.
                         </p>
 
                         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                             <a
                                 href="#experience"
-                                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98]"
+                                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98] dark:bg-slate-100 dark:!text-slate-950 dark:hover:bg-white"
                             >
 
                                 <svg
@@ -38,7 +38,7 @@ export default function Hero() {
 
                             <a
                                 href="#projects"
-                                className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-900 hover:shadow-[0_14px_35px_rgba(0,0,0,0.12)] active:translate-y-0 active:scale-[0.98]"
+                                className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-900 hover:shadow-[0_14px_35px_rgba(0,0,0,0.12)] active:translate-y-0 active:scale-[0.98] dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:hover:border-slate-300"
 
                             >
                                 <svg
@@ -58,7 +58,7 @@ export default function Hero() {
                                 href="/cv.pdf"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98]"
+                                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98] dark:bg-slate-100 dark:!text-slate-950 dark:hover:bg-white"
                             >
                                 <svg
                                     viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ export default function Hero() {
 
                             <a
                                 href="mailto:h.s.elbeera@gmail.com"
-                                className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-900 hover:shadow-[0_14px_35px_rgba(0,0,0,0.12)] active:translate-y-0 active:scale-[0.98]"
+                                className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-900 hover:shadow-[0_14px_35px_rgba(0,0,0,0.12)] active:translate-y-0 active:scale-[0.98] dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:hover:border-slate-300"
                             >
                                 <svg
                                     viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="flex flex-col items-center">
-                        <div className="h-48 w-48 rounded-full bg-slate-900 sm:h-64 sm:w-64 lg:h-80 lg:w-80 overflow-hidden">
+                        <div className="h-48 w-48 overflow-hidden rounded-full bg-slate-900 sm:h-64 sm:w-64 lg:h-80 lg:w-80 dark:bg-slate-800">
                             <Image
                                 src="/profile-circle.png"
                                 alt="Hothyfa profile"
@@ -97,8 +97,8 @@ export default function Hero() {
                             />
                         </div>
                         <div className="mt-4">
-                            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700">
-                                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700 dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-200">
+                                <span className="h-2 w-2 rounded-full bg-emerald-500 dark:bg-emerald-400" />
                                 Open to contract roles
                             </span>
                         </div>

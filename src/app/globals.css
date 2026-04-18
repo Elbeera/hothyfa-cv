@@ -3,3 +3,129 @@
 html {
   scroll-behavior: smooth;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body {
+  min-height: 100%;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+:root {
+  /* Ask CV theme tokens (light = current design) */
+  --cv-ink: #111111;
+  --cv-ink-contrast: #ffffff;
+  --cv-muted: #666666;
+  --cv-muted-2: #555555;
+
+  --cv-panel-border: #e8e8e8;
+  --cv-divider: #efefef;
+  --cv-border: #e5e5e5;
+  --cv-border-2: #e7e7e7;
+
+  --cv-panel-gradient: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  --cv-header-bg: rgba(255, 255, 255, 0.9);
+  --cv-chat-bg: radial-gradient(
+      circle at top,
+      rgba(0, 0, 0, 0.02),
+      transparent 35%
+    ),
+    #fcfcfc;
+
+  --cv-assistant-bubble-bg: #f5f5f5;
+  --cv-assistant-bubble-text: #111111;
+  --cv-assistant-bubble-border: #e7e7e7;
+  --cv-assistant-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+
+  --cv-user-bubble-bg: #111111;
+  --cv-user-bubble-text: #ffffff;
+  --cv-user-bubble-border: #111111;
+  --cv-user-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+
+  --cv-typing-dot: #999999;
+
+  --cv-chip-bg: #f1f1f1;
+  --cv-chip-border: #e5e5e5;
+  --cv-chip-text: #555555;
+
+  --cv-suggest-bg: #fafafa;
+  --cv-suggest-border: #e2e2e2;
+  --cv-suggest-text: #222222;
+
+  --cv-input-wrap-bg: #fafafa;
+  --cv-input-wrap-border: #e5e5e5;
+  --cv-input-text: #111111;
+
+  --cv-send-disabled-bg: #d9d9d9;
+  --cv-send-enabled-bg: #111111;
+  --cv-send-text: #ffffff;
+
+  --cv-code-bg-user: rgba(255, 255, 255, 0.14);
+  --cv-code-bg-assistant: #f3f3f3;
+  --cv-blockquote-muted-user: rgba(255, 255, 255, 0.8);
+  --cv-blockquote-muted-assistant: #555555;
+  --cv-link-user: #ffffff;
+  --cv-link-assistant: #111111;
+}
+
+html.dark {
+  /* Ask CV theme tokens (dark) */
+  --cv-ink: #f5f5f5;
+  --cv-ink-contrast: #0b0b0b;
+  --cv-muted: rgba(245, 245, 245, 0.72);
+  --cv-muted-2: rgba(245, 245, 245, 0.72);
+
+  --cv-panel-border: rgba(148, 163, 184, 0.24);
+  --cv-divider: rgba(148, 163, 184, 0.18);
+  --cv-border: rgba(148, 163, 184, 0.22);
+  --cv-border-2: rgba(148, 163, 184, 0.22);
+
+  --cv-panel-gradient: linear-gradient(180deg, #0b1220 0%, #0a0f1c 100%);
+  --cv-header-bg: rgba(15, 23, 42, 0.72);
+  --cv-chat-bg: radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.05),
+      transparent 38%
+    ),
+    #070b14;
+
+  /* Keep chat polarity recognizable: user = light bubble, assistant = dark bubble */
+  --cv-assistant-bubble-bg: rgba(255, 255, 255, 0.06);
+  --cv-assistant-bubble-text: #f5f5f5;
+  --cv-assistant-bubble-border: rgba(148, 163, 184, 0.2);
+  --cv-assistant-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+
+  --cv-user-bubble-bg: #f5f5f5;
+  --cv-user-bubble-text: #0b0b0b;
+  --cv-user-bubble-border: rgba(255, 255, 255, 0.5);
+  --cv-user-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+
+  --cv-typing-dot: rgba(245, 245, 245, 0.55);
+
+  --cv-chip-bg: rgba(255, 255, 255, 0.06);
+  --cv-chip-border: rgba(148, 163, 184, 0.2);
+  --cv-chip-text: rgba(245, 245, 245, 0.75);
+
+  --cv-suggest-bg: rgba(255, 255, 255, 0.04);
+  --cv-suggest-border: rgba(148, 163, 184, 0.22);
+  --cv-suggest-text: rgba(245, 245, 245, 0.9);
+
+  --cv-input-wrap-bg: rgba(255, 255, 255, 0.04);
+  --cv-input-wrap-border: rgba(148, 163, 184, 0.22);
+  --cv-input-text: rgba(245, 245, 245, 0.92);
+
+  --cv-send-disabled-bg: rgba(148, 163, 184, 0.25);
+  --cv-send-enabled-bg: #f5f5f5;
+  --cv-send-text: #0b0b0b;
+
+  --cv-code-bg-user: rgba(0, 0, 0, 0.08);
+  --cv-code-bg-assistant: rgba(255, 255, 255, 0.06);
+  --cv-blockquote-muted-user: rgba(11, 11, 11, 0.75);
+  --cv-blockquote-muted-assistant: rgba(245, 245, 245, 0.72);
+  --cv-link-user: #0b0b0b;
+  --cv-link-assistant: #f5f5f5;
+}

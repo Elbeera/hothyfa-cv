@@ -245,7 +245,7 @@ function InfoCard({ item }: { item: TextCard }) {
   return (
     <div
       className={[
-        "rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md",
+        "rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-slate-800 dark:bg-slate-950 dark:hover:border-slate-700",
         item.wide ? "sm:col-span-2" : "",
       ].join(" ")}
     >
@@ -259,12 +259,12 @@ function InfoCard({ item }: { item: TextCard }) {
         </div>
         <div className="min-w-0 flex-1">
           <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
-            <h3 className="min-w-0 text-sm font-semibold uppercase tracking-[0.16em] text-slate-500 break-words">{item.title}</h3>
+            <h3 className="min-w-0 break-words text-sm font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">{item.title}</h3>
             {item.tag ? (
-              <span className="shrink-0 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">{item.tag}</span>
+              <span className="shrink-0 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600 dark:bg-white/5 dark:text-slate-300">{item.tag}</span>
             ) : null}
           </div>
-          <p className="mt-3 text-sm leading-6 text-slate-700">{item.description}</p>
+          <p className="mt-3 text-sm leading-6 text-slate-700 dark:text-slate-300">{item.description}</p>
         </div>
       </div>
     </div>
@@ -273,7 +273,7 @@ function InfoCard({ item }: { item: TextCard }) {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
       <Navbar />
       <Hero />
 
@@ -282,7 +282,7 @@ export default function Home() {
       </Section>
 
       <Section id="summary" title="Executive Summary">
-        <div className="max-w-3xl space-y-5 text-slate-700">
+        <div className="max-w-3xl space-y-5 text-slate-700 dark:text-slate-300">
           {summaryParagraphs.map((paragraph) => (
             <p key={paragraph.slice(0, 24)} className="text-base leading-7 sm:text-lg">
               {paragraph}
@@ -312,11 +312,11 @@ export default function Home() {
           {experienceItems.map((item) => (
             <article key={`${item.company}-${item.role}`}>
               <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                <h3 className="text-lg font-semibold text-slate-900">{item.role}</h3>
-                <p className="text-sm text-slate-500">{item.period}</p>
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">{item.role}</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400">{item.period}</p>
               </div>
-              <p className="mt-1 text-sm font-medium text-slate-600">{item.company}</p>
-              <div className="mt-5 max-w-3xl space-y-3 text-[15px] leading-7 text-slate-700 sm:text-base">
+              <p className="mt-1 text-sm font-medium text-slate-600 dark:text-slate-300">{item.company}</p>
+              <div className="mt-5 max-w-3xl space-y-3 text-[15px] leading-7 text-slate-700 sm:text-base dark:text-slate-300">
                 <p>{item.summary}</p>
                 {item.summarySecondary ? <p>{item.summarySecondary}</p> : null}
                 <ul className="list-disc space-y-2 pl-5">
@@ -348,7 +348,7 @@ export default function Home() {
 
       <Section id="contact" title="Contact">
         <div className="max-w-3xl space-y-6">
-          <p className="text-base leading-7 text-slate-700 sm:text-lg">
+          <p className="text-base leading-7 text-slate-700 sm:text-lg dark:text-slate-300">
             I&apos;m open to senior software engineering opportunities where I can contribute through strong technical ownership,
             scalable system design, and building AI-driven applications in real-world environments.
           </p>
@@ -357,13 +357,13 @@ export default function Home() {
               href="/cv.pdf"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-black"
+              className="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-black dark:bg-slate-100 dark:text-slate-950 dark:hover:bg-white"
             >
               Download CV
             </a>
             <a
               href="mailto:h.s.elbeera@gmail.com"
-              className="inline-flex items-center justify-center rounded-2xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-900 transition hover:border-slate-900"
+              className="inline-flex items-center justify-center rounded-2xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-900 transition hover:border-slate-900 dark:border-slate-700 dark:text-slate-100 dark:hover:border-slate-300"
             >
               Email Me
             </a>

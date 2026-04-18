@@ -65,12 +65,18 @@ function Bubble({
           maxWidth: "85%",
           padding: "14px 16px",
           borderRadius: "18px",
-          background: isUser ? "#111111" : "#f5f5f5",
-          color: isUser ? "#ffffff" : "#111111",
-          border: isUser ? "1px solid #111111" : "1px solid #e7e7e7",
+          background: isUser
+            ? "var(--cv-user-bubble-bg)"
+            : "var(--cv-assistant-bubble-bg)",
+          color: isUser
+            ? "var(--cv-user-bubble-text)"
+            : "var(--cv-assistant-bubble-text)",
+          border: isUser
+            ? "1px solid var(--cv-user-bubble-border)"
+            : "1px solid var(--cv-assistant-bubble-border)",
           boxShadow: isUser
-            ? "0 6px 20px rgba(0,0,0,0.12)"
-            : "0 6px 20px rgba(0,0,0,0.05)",
+            ? "var(--cv-user-shadow)"
+            : "var(--cv-assistant-shadow)",
           lineHeight: 1.6,
           fontSize: "0.95rem",
         }}
@@ -99,7 +105,7 @@ function TypingDots() {
             width: "7px",
             height: "7px",
             borderRadius: "999px",
-            background: "#999999",
+            background: "var(--cv-typing-dot)",
             display: "inline-block",
             animation: `pulse 1.2s ${i * 0.15}s infinite ease-in-out`,
           }}
@@ -130,9 +136,13 @@ function MarkdownMessage({
   content: string;
   isUser: boolean;
 }) {
-  const textColor = isUser ? "#ffffff" : "#111111";
-  const mutedColor = isUser ? "rgba(255,255,255,0.8)" : "#555555";
-  const borderColor = isUser ? "rgba(255,255,255,0.2)" : "#e5e5e5";
+  const textColor = isUser
+    ? "var(--cv-user-bubble-text)"
+    : "var(--cv-assistant-bubble-text)";
+  const mutedColor = isUser
+    ? "var(--cv-blockquote-muted-user)"
+    : "var(--cv-blockquote-muted-assistant)";
+  const borderColor = "var(--cv-border)";
   const normalizedContent = normalizeMarkdown(content);
 
   return (
@@ -198,7 +208,9 @@ function MarkdownMessage({
                 fontSize: "0.88em",
                 padding: "2px 6px",
                 borderRadius: "6px",
-                background: isUser ? "rgba(255,255,255,0.14)" : "#f3f3f3",
+                background: isUser
+                  ? "var(--cv-code-bg-user)"
+                  : "var(--cv-code-bg-assistant)",
                 border: `1px solid ${borderColor}`,
               }}
             >
@@ -223,7 +235,7 @@ function MarkdownMessage({
               target="_blank"
               rel="noreferrer"
               style={{
-                color: isUser ? "#ffffff" : "#111111",
+                color: isUser ? "var(--cv-link-user)" : "var(--cv-link-assistant)",
                 textDecoration: "underline",
               }}
             >
@@ -365,18 +377,18 @@ export default function AskCv() {
     >
       <div
         style={{
-          border: "1px solid #e8e8e8",
+          border: "1px solid var(--cv-panel-border)",
           borderRadius: "28px",
           overflow: "hidden",
-          background: "linear-gradient(180deg, #ffffff 0%, #fafafa 100%)",
+          background: "var(--cv-panel-gradient)",
           boxShadow: "0 18px 50px rgba(0, 0, 0, 0.07)",
         }}
       >
         <div
           style={{
             padding: "24px 24px 18px",
-            borderBottom: "1px solid #efefef",
-            background: "rgba(255,255,255,0.9)",
+            borderBottom: "1px solid var(--cv-divider)",
+            background: "var(--cv-header-bg)",
             backdropFilter: "blur(8px)",
           }}
         >
@@ -393,7 +405,7 @@ export default function AskCv() {
                 width: "12px",
                 height: "12px",
                 borderRadius: "999px",
-                background: "#111111",
+                background: "var(--cv-ink)",
               }}
             />
             <h2
@@ -401,7 +413,7 @@ export default function AskCv() {
                 margin: 0,
                 fontSize: "1.35rem",
                 fontWeight: 700,
-                color: "#111111",
+                color: "var(--cv-ink)",
               }}
             >
               Ask My CV
@@ -411,7 +423,7 @@ export default function AskCv() {
           <p
             style={{
               margin: 0,
-              color: "#666666",
+              color: "var(--cv-muted)",
               lineHeight: 1.6,
               fontSize: "0.95rem",
               maxWidth: "720px",
@@ -429,8 +441,7 @@ export default function AskCv() {
             height: "440px",
             overflowY: "auto",
             padding: "22px 20px 10px",
-            background:
-              "radial-gradient(circle at top, rgba(0,0,0,0.02), transparent 35%), #fcfcfc",
+            background: "var(--cv-chat-bg)",
           }}
         >
           {messages.map((msg) => {
@@ -475,9 +486,9 @@ export default function AskCv() {
                           style={{
                             padding: "6px 10px",
                             borderRadius: "999px",
-                            background: "#f1f1f1",
-                            border: "1px solid #e5e5e5",
-                            color: "#555555",
+                            background: "var(--cv-chip-bg)",
+                            border: "1px solid var(--cv-chip-border)",
+                            color: "var(--cv-chip-text)",
                             fontSize: "0.78rem",
                             fontWeight: 500,
                           }}
@@ -496,8 +507,8 @@ export default function AskCv() {
         <div
           style={{
             padding: "16px 20px 18px",
-            borderTop: "1px solid #efefef",
-            background: "#ffffff",
+            borderTop: "1px solid var(--cv-divider)",
+            background: "var(--cv-ink-contrast)",
           }}
         >
           <div
@@ -517,9 +528,9 @@ export default function AskCv() {
                 style={{
                   padding: "8px 12px",
                   borderRadius: "999px",
-                  border: "1px solid #e2e2e2",
-                  background: "#fafafa",
-                  color: "#222222",
+                  border: "1px solid var(--cv-suggest-border)",
+                  background: "var(--cv-suggest-bg)",
+                  color: "var(--cv-suggest-text)",
                   cursor: loading ? "not-allowed" : "pointer",
                   fontSize: "0.85rem",
                   transition: "all 0.2s ease",
@@ -537,9 +548,9 @@ export default function AskCv() {
               alignItems: "flex-end",
               gap: "12px",
               padding: "10px",
-              border: "1px solid #e5e5e5",
+              border: "1px solid var(--cv-input-wrap-border)",
               borderRadius: "22px",
-              background: "#fafafa",
+              background: "var(--cv-input-wrap-bg)",
             }}
           >
             <textarea
@@ -560,7 +571,7 @@ export default function AskCv() {
                 border: "none",
                 outline: "none",
                 background: "transparent",
-                color: "#111111",
+                color: "var(--cv-input-text)",
                 fontSize: "0.95rem",
                 lineHeight: 1.5,
                 minHeight: "24px",
@@ -581,8 +592,10 @@ export default function AskCv() {
                 borderRadius: "999px",
                 border: "none",
                 background:
-                  loading || !message.trim() ? "#d9d9d9" : "#111111",
-                color: "#ffffff",
+                  loading || !message.trim()
+                    ? "var(--cv-send-disabled-bg)"
+                    : "var(--cv-send-enabled-bg)",
+                color: "var(--cv-send-text)",
                 cursor:
                   loading || !message.trim() ? "not-allowed" : "pointer",
                 display: "flex",
