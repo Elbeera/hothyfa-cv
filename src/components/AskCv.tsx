@@ -276,9 +276,16 @@ export default function AskCv() {
     },
   ]);
   const [loading, setLoading] = useState(false);
+  const [usedStarterPrompts, setUsedStarterPrompts] = useState<Set<string>>(
+    () => new Set()
+  );
 
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const typingIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const availableStarterPrompts = useMemo(
+    () => starterPrompts.filter((prompt) => !usedStarterPrompts.has(prompt)),
+    [starterPrompts, usedStarterPrompts]
+  );
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -364,6 +371,16 @@ export default function AskCv() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleStarterPromptClick = (prompt: string) => {
+    if (loading) return;
+    setUsedStarterPrompts((prev) => {
+      const next = new Set(prev);
+      next.add(prompt);
+      return next;
+    });
+    void handleSubmit(prompt);
   };
 
   return (
@@ -511,36 +528,38 @@ export default function AskCv() {
             background: "var(--cv-ink-contrast)",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "8px",
-              marginBottom: "14px",
-            }}
-          >
-            {starterPrompts.map((prompt) => (
-              <button
-                key={prompt}
-                type="button"
-                onClick={() => handleSubmit(prompt)}
-                disabled={loading}
-                style={{
-                  padding: "8px 12px",
-                  borderRadius: "999px",
-                  border: "1px solid var(--cv-suggest-border)",
-                  background: "var(--cv-suggest-bg)",
-                  color: "var(--cv-suggest-text)",
-                  cursor: loading ? "not-allowed" : "pointer",
-                  fontSize: "0.85rem",
-                  transition: "all 0.2s ease",
-                  opacity: loading ? 0.6 : 1,
-                }}
-              >
-                {prompt}
-              </button>
-            ))}
-          </div>
+          {availableStarterPrompts.length > 0 && (
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+                marginBottom: "14px",
+              }}
+            >
+              {availableStarterPrompts.map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => handleStarterPromptClick(prompt)}
+                  disabled={loading}
+                  style={{
+                    padding: "8px 12px",
+                    borderRadius: "999px",
+                    border: "1px solid var(--cv-suggest-border)",
+                    background: "var(--cv-suggest-bg)",
+                    color: "var(--cv-suggest-text)",
+                    cursor: loading ? "not-allowed" : "pointer",
+                    fontSize: "0.85rem",
+                    transition: "all 0.2s ease",
+                    opacity: loading ? 0.6 : 1,
+                  }}
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          )}
 
           <div
             style={{
