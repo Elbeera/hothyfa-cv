@@ -338,6 +338,7 @@ export default function AskCv() {
 
     try {
       const res = await askCv(outgoing);
+      console.log("RAW ANSWER:", JSON.stringify(res.answer));
       animateAssistantMessage(res.answer, res.sources || []);
     } catch (error) {
       console.error(error);
