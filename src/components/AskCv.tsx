@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { askCv } from "../lib/askCv";
 
 type SourceChunk = {
@@ -112,6 +114,99 @@ function TypingDots() {
   );
 }
 
+function MarkdownMessage({
+  content,
+  isUser,
+}: {
+  content: string;
+  isUser: boolean;
+}) {
+  const textColor = isUser ? "#ffffff" : "#111111";
+  const mutedColor = isUser ? "rgba(255,255,255,0.8)" : "#555555";
+  const borderColor = isUser ? "rgba(255,255,255,0.2)" : "#e5e5e5";
+
+  return (
+    <div style={{ color: textColor }}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          h1: ({ children }) => (
+            <h1 style={{ fontSize: "1.2rem", fontWeight: 700, margin: "0 0 10px" }}>
+              {children}
+            </h1>
+          ),
+          h2: ({ children }) => (
+            <h2 style={{ fontSize: "1.1rem", fontWeight: 700, margin: "0 0 10px" }}>
+              {children}
+            </h2>
+          ),
+          h3: ({ children }) => (
+            <h3 style={{ fontSize: "1rem", fontWeight: 700, margin: "0 0 8px" }}>
+              {children}
+            </h3>
+          ),
+          p: ({ children }) => (
+            <p style={{ margin: "0 0 10px", lineHeight: 1.7 }}>{children}</p>
+          ),
+          ul: ({ children }) => (
+            <ul style={{ margin: "0 0 10px 18px", padding: 0 }}>{children}</ul>
+          ),
+          ol: ({ children }) => (
+            <ol style={{ margin: "0 0 10px 18px", padding: 0 }}>{children}</ol>
+          ),
+          li: ({ children }) => (
+            <li style={{ marginBottom: "6px", lineHeight: 1.6 }}>{children}</li>
+          ),
+          strong: ({ children }) => (
+            <strong style={{ fontWeight: 700 }}>{children}</strong>
+          ),
+          em: ({ children }) => <em>{children}</em>,
+          code: ({ children }) => (
+            <code
+              style={{
+                fontSize: "0.88em",
+                padding: "2px 6px",
+                borderRadius: "6px",
+                background: isUser ? "rgba(255,255,255,0.14)" : "#f3f3f3",
+                border: `1px solid ${borderColor}`,
+              }}
+            >
+              {children}
+            </code>
+          ),
+          blockquote: ({ children }) => (
+            <blockquote
+              style={{
+                margin: "0 0 10px",
+                paddingLeft: "12px",
+                borderLeft: `3px solid ${borderColor}`,
+                color: mutedColor,
+              }}
+            >
+              {children}
+            </blockquote>
+          ),
+          a: ({ href, children }) => (
+            <a
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: isUser ? "#ffffff" : "#111111",
+                textDecoration: "underline",
+              }}
+            >
+              {children}
+            </a>
+          ),
+        }}
+      >
+        {content}
+      </ReactMarkdown>
+    </div>
+  );
+}
+
 export default function AskCv() {
   const starterPrompts = useMemo(
     () => [
@@ -178,11 +273,11 @@ export default function AskCv() {
         prev.map((msg) =>
           msg.id === assistantId
             ? {
-                ...msg,
-                content: fullText.slice(0, index),
-                isTyping: index < fullText.length,
-                sources: index >= fullText.length ? sources : [],
-              }
+              ...msg,
+              content: fullText.slice(0, index),
+              isTyping: index < fullText.length,
+              sources: index >= fullText.length ? sources : [],
+            }
             : msg
         )
       );
@@ -314,7 +409,7 @@ export default function AskCv() {
                   {msg.role === "assistant" && msg.isTyping && !msg.content ? (
                     <TypingDots />
                   ) : (
-                    msg.content
+                    <MarkdownMessage content={msg.content} isUser={msg.role === "user"} />
                   )}
                 </Bubble>
 
