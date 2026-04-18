@@ -24,6 +24,8 @@ function formatSourceLabel(source: string) {
     "experience.md": "Experience",
     "certifications.md": "Certifications",
     "projects.md": "Projects",
+    "facts.md": "Facts",
+    "general.md": "General",
   };
 
   return labels[source] || source.replace(".md", "");
@@ -31,6 +33,14 @@ function formatSourceLabel(source: string) {
 
 function uniqueSourceLabels(sources: SourceChunk[]) {
   return [...new Set(sources.map((s) => formatSourceLabel(s.source)))];
+}
+
+function normalizeMarkdown(content: string) {
+  return content
+    .replace(/\r\n/g, "\n")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 }
 
 function Bubble({
@@ -61,7 +71,6 @@ function Bubble({
           boxShadow: isUser
             ? "0 6px 20px rgba(0,0,0,0.12)"
             : "0 6px 20px rgba(0,0,0,0.05)",
-          whiteSpace: "pre-wrap",
           lineHeight: 1.6,
           fontSize: "0.95rem",
         }}
@@ -124,6 +133,7 @@ function MarkdownMessage({
   const textColor = isUser ? "#ffffff" : "#111111";
   const mutedColor = isUser ? "rgba(255,255,255,0.8)" : "#555555";
   const borderColor = isUser ? "rgba(255,255,255,0.2)" : "#e5e5e5";
+  const normalizedContent = normalizeMarkdown(content);
 
   return (
     <div style={{ color: textColor }}>
@@ -131,31 +141,52 @@ function MarkdownMessage({
         remarkPlugins={[remarkGfm]}
         components={{
           h1: ({ children }) => (
-            <h1 style={{ fontSize: "1.2rem", fontWeight: 700, margin: "0 0 10px" }}>
+            <h1
+              style={{
+                fontSize: "1.12rem",
+                fontWeight: 700,
+                margin: "0 0 8px",
+                lineHeight: 1.35,
+              }}
+            >
               {children}
             </h1>
           ),
           h2: ({ children }) => (
-            <h2 style={{ fontSize: "1.1rem", fontWeight: 700, margin: "0 0 10px" }}>
+            <h2
+              style={{
+                fontSize: "1.04rem",
+                fontWeight: 700,
+                margin: "0 0 8px",
+                lineHeight: 1.35,
+              }}
+            >
               {children}
             </h2>
           ),
           h3: ({ children }) => (
-            <h3 style={{ fontSize: "1rem", fontWeight: 700, margin: "0 0 8px" }}>
+            <h3
+              style={{
+                fontSize: "0.98rem",
+                fontWeight: 700,
+                margin: "0 0 6px",
+                lineHeight: 1.35,
+              }}
+            >
               {children}
             </h3>
           ),
           p: ({ children }) => (
-            <p style={{ margin: "0 0 10px", lineHeight: 1.7 }}>{children}</p>
+            <p style={{ margin: "0 0 6px", lineHeight: 1.65 }}>{children}</p>
           ),
           ul: ({ children }) => (
-            <ul style={{ margin: "0 0 10px 18px", padding: 0 }}>{children}</ul>
+            <ul style={{ margin: "4px 0 8px 18px", padding: 0 }}>{children}</ul>
           ),
           ol: ({ children }) => (
-            <ol style={{ margin: "0 0 10px 18px", padding: 0 }}>{children}</ol>
+            <ol style={{ margin: "4px 0 8px 18px", padding: 0 }}>{children}</ol>
           ),
           li: ({ children }) => (
-            <li style={{ marginBottom: "6px", lineHeight: 1.6 }}>{children}</li>
+            <li style={{ marginBottom: "4px", lineHeight: 1.55 }}>{children}</li>
           ),
           strong: ({ children }) => (
             <strong style={{ fontWeight: 700 }}>{children}</strong>
@@ -177,7 +208,7 @@ function MarkdownMessage({
           blockquote: ({ children }) => (
             <blockquote
               style={{
-                margin: "0 0 10px",
+                margin: "4px 0 8px",
                 paddingLeft: "12px",
                 borderLeft: `3px solid ${borderColor}`,
                 color: mutedColor,
@@ -201,7 +232,7 @@ function MarkdownMessage({
           ),
         }}
       >
-        {content}
+        {normalizedContent}
       </ReactMarkdown>
     </div>
   );
@@ -273,11 +304,11 @@ export default function AskCv() {
         prev.map((msg) =>
           msg.id === assistantId
             ? {
-              ...msg,
-              content: fullText.slice(0, index),
-              isTyping: index < fullText.length,
-              sources: index >= fullText.length ? sources : [],
-            }
+                ...msg,
+                content: fullText.slice(0, index),
+                isTyping: index < fullText.length,
+                sources: index >= fullText.length ? sources : [],
+              }
             : msg
         )
       );
@@ -409,7 +440,10 @@ export default function AskCv() {
                   {msg.role === "assistant" && msg.isTyping && !msg.content ? (
                     <TypingDots />
                   ) : (
-                    <MarkdownMessage content={msg.content} isUser={msg.role === "user"} />
+                    <MarkdownMessage
+                      content={msg.content}
+                      isUser={msg.role === "user"}
+                    />
                   )}
                 </Bubble>
 
