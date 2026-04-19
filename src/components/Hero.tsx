@@ -60,21 +60,47 @@ export default function Hero() {
                         </div>
 
                         <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-                            <a
-                                href="/cv.pdf"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98] dark:bg-slate-100 dark:!text-slate-950 dark:hover:bg-white"
-                            >
-                                <svg
-                                    viewBox="0 0 24 24"
-                                    fill="currentColor"
-                                    className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5"
+                            <details className="group relative">
+                                <summary
+                                    className="inline-flex list-none items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98] dark:bg-slate-100 dark:!text-slate-950 dark:hover:bg-white cursor-pointer [&::-webkit-details-marker]:hidden"
                                 >
-                                    <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
-                                </svg>
-                                {isArabic ? "تحميل السيرة الذاتية" : "Download CV"}
-                            </a>
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5"
+                                    >
+                                        <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
+                                    </svg>
+                                    {isArabic ? "تحميل السيرة الذاتية" : "Download CV"}
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        className="h-4 w-4 transition group-open:rotate-180"
+                                    >
+                                        <path d="M6.7 9.3a1 1 0 0 1 1.4 0L12 13.2l3.9-3.9a1 1 0 1 1 1.4 1.4l-4.6 4.6a1 1 0 0 1-1.4 0L6.7 10.7a1 1 0 0 1 0-1.4Z" />
+                                    </svg>
+                                </summary>
+                                <div className="absolute z-20 mt-2 min-w-full rounded-xl border border-slate-200 bg-white p-1 shadow-lg dark:border-slate-700 dark:bg-slate-900">
+                                    <a
+                                        href="/cv.pdf"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-200 dark:hover:bg-white/10 dark:hover:text-white"
+                                    >
+                                        <span className="font-medium">PDF</span>
+                                        <span className="text-xs opacity-75">{isArabic ? "تنسيق ثابت" : "fixed layout"}</span>
+                                    </a>
+                                    <a
+                                        href="/cv.docx"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-200 dark:hover:bg-white/10 dark:hover:text-white"
+                                    >
+                                        <span className="font-medium">DOCX</span>
+                                        <span className="text-xs opacity-75">{isArabic ? "قابل للتعديل" : "editable"}</span>
+                                    </a>
+                                </div>
+                            </details>
 
                             <a
                                 href="mailto:h.s.elbeera@gmail.com"
