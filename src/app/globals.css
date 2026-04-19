@@ -15,6 +15,10 @@ html.dark {
   color-scheme: dark;
 }
 
+html[lang="ar"] body {
+  font-family: var(--font-tajawal), ui-sans-serif, system-ui, sans-serif;
+}
+
 :root {
   /* Ask CV theme tokens (light = current design) */
   --cv-ink: #111111;

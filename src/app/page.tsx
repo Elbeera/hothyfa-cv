@@ -130,6 +130,10 @@ const arTranslations: Record<string, string> = {
   "Cost Saving": "خفض التكاليف",
   "Internal document conversion service that transformed Word files to PDF at scale, helping reduce Adobe-related costs by up to £15,000 per month.":
     "خدمة داخلية لتحويل المستندات من Word إلى PDF على نطاق واسع، ساهمت في خفض التكاليف المرتبطة بـ Adobe حتى 15,000 جنيه إسترليني شهرياً.",
+  "CV Website & AI Assistant": "موقع السيرة الذاتية ومساعد الذكاء الاصطناعي",
+  "Portfolio Platform": "منصة تعريفية",
+  "Built and deployed this multilingual CV website using Next.js, React, TypeScript, and Tailwind CSS, with responsive sections, theme/language toggles, and a production-ready UI architecture. Includes an AI-powered CV assistant integrated with backend APIs and deployed AWS cloud infrastructure for reliable performance and secure delivery.":
+    "تم بناء ونشر هذا الموقع متعدد اللغات للسيرة الذاتية باستخدام Next.js وReact وTypeScript وTailwind CSS، مع أقسام متجاوبة وتبديل للوضع/اللغة ومعمارية واجهة جاهزة للإنتاج. يتضمن مساعد سيرة ذاتية مدعوماً بالذكاء الاصطناعي ومتكاملاً مع واجهات خلفية وبنية نشر سحابية لضمان الاعتمادية والأداء والتسليم الآمن.",
   "Frontend Systems": "أنظمة الواجهة الأمامية",
   "React, Next.js, TypeScript, responsive UI engineering, user-focused interfaces, and modern frontend delivery.":
     "React وNext.js وTypeScript وهندسة واجهات متجاوبة وواجهات تركز على المستخدم وتسليم حديث للواجهة الأمامية.",
@@ -349,6 +353,16 @@ const projectItems: TextCard[] = [
     iconClass: "text-emerald-600",
     iconBgClass: "bg-emerald-50",
   },
+  {
+    title: "CV Website & AI Assistant",
+    tag: "Portfolio Platform",
+    description:
+      "Built and deployed this multilingual CV website using Next.js, React, TypeScript, and Tailwind CSS, with responsive sections, theme/language toggles, and a production-ready UI architecture. Includes an AI-powered CV assistant integrated with backend APIs and deployed AWS cloud infrastructure for reliable performance and secure delivery.",
+    iconPath:
+      "M4 5h16v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Zm2 2v9h12V7H6Zm5 12h2v2h-2v-2Z",
+    iconClass: "text-indigo-600",
+    iconBgClass: "bg-indigo-50",
+  },
 ];
 
 const strengthItems: TextCard[] = [
@@ -524,7 +538,7 @@ export default function Home() {
               href="/cv.pdf"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-black dark:bg-slate-100 dark:text-slate-950 dark:hover:bg-white"
+              className="inline-flex items-center justify-center gap-2.5 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-black dark:bg-slate-100 dark:text-slate-950 dark:hover:bg-white"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
                 <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
@@ -533,7 +547,7 @@ export default function Home() {
             </a>
             <a
               href="mailto:h.s.elbeera@gmail.com"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-900 transition hover:border-slate-900 dark:border-slate-700 dark:text-slate-100 dark:hover:border-slate-300"
+              className="inline-flex items-center justify-center gap-2.5 rounded-2xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-900 transition hover:border-slate-900 dark:border-slate-700 dark:text-slate-100 dark:hover:border-slate-300"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
                 <path d="M4 4h16a2 2 0 0 1 2 2v.01L12 13 2 6.01V6a2 2 0 0 1 2-2Zm0 4.24 7.4 5.18a1 1 0 0 0 1.2 0L20 8.24V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8.24Z" />
@@ -543,11 +557,22 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             {contactLinks.map((link) => (
-              <a key={link.label} href={link.href} target="_blank" rel="noreferrer" className={link.className}>
-                <svg viewBox="0 0 24 24" fill="currentColor" className="mr-2 inline-block h-4 w-4 align-[-2px]" aria-hidden="true">
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className={`${link.className} gap-2.5`}
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="-translate-y-px h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
                   <path d={link.iconPath} />
                 </svg>
-                {link.label}
+                <span>{link.label}</span>
               </a>
             ))}
           </div>

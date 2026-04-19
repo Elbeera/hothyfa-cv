@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import { Tajawal } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { LanguageProvider } from "@/components/language/LanguageProvider";
+
+const tajawal = Tajawal({
+  subsets: ["arabic", "latin"],
+  weight: ["400", "500", "700", "800"],
+  variable: "--font-tajawal",
+});
 
 export const metadata: Metadata = {
   title: "Hothyfa | Senior Software Engineer | هذيفة | مهندس برمجيات أول",
@@ -38,7 +45,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-w-[320px] bg-white font-sans text-slate-900 antialiased transition-colors dark:bg-slate-950 dark:text-slate-100">
+      <body
+        className={`${tajawal.variable} min-w-[320px] bg-white font-sans text-slate-900 antialiased transition-colors dark:bg-slate-950 dark:text-slate-100`}
+      >
         <ThemeProvider>
           <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
