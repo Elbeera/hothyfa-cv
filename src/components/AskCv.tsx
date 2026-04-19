@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { askCv } from "../lib/askCv";
+import { useLanguage } from "./language/LanguageProvider";
 
 type SourceChunk = {
   source: string;
@@ -251,27 +252,45 @@ function MarkdownMessage({
 }
 
 export default function AskCv() {
+  const { language } = useLanguage();
+  const isArabic = language === "ar";
+
   const starterPrompts = useMemo(
-    () => [
-      "Hi",
-      "Who are you?",
-      "How can you help me?",
-      "Who is Hothyfa Elbeera?",
-      "What is Justice Redact?",
-      "What AI experience does Hothyfa have?",
-      "Has he used Python in production?",
-      "Does he have AWS certifications?",
-    ],
-    []
+    () =>
+      isArabic
+        ? [
+            "مرحبا",
+            "من أنت؟",
+            "كيف يمكنك مساعدتي؟",
+            "من هو هذيفة البعيرة؟",
+            "ما هو مشروع Justice Redact؟",
+            "ما خبرة هذيفة في الذكاء الاصطناعي؟",
+            "هل استخدم Python في بيئات الإنتاج؟",
+            "هل لديه شهادات AWS؟",
+          ]
+        : [
+            "Hi",
+            "Who are you?",
+            "How can you help me?",
+            "Who is Hothyfa Elbeera?",
+            "What is Justice Redact?",
+            "What AI experience does Hothyfa have?",
+            "Has he used Python in production?",
+            "Does he have AWS certifications?",
+          ],
+    [isArabic]
   );
+
+  const welcomeMessage = isArabic
+    ? "اسأل عن خبرتي، مشاريعي، شهاداتي، أو خلفيتي التقنية. سأجيب باستخدام محتوى سيرتي الذاتية ومحفظتي فقط."
+    : "Ask about my experience, projects, certifications, or technical background. I’ll answer using my portfolio and CV content only.";
 
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "welcome",
       role: "assistant",
-      content:
-        "Ask about my experience, projects, certifications, or technical background. I’ll answer using my portfolio and CV content only.",
+      content: welcomeMessage,
       sources: [],
     },
   ]);
@@ -292,6 +311,19 @@ export default function AskCv() {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
   }, [messages]);
+
+  useEffect(() => {
+    setMessages([
+      {
+        id: "welcome",
+        role: "assistant",
+        content: welcomeMessage,
+        sources: [],
+      },
+    ]);
+    setUsedStarterPrompts(new Set());
+    setMessage("");
+  }, [welcomeMessage]);
 
   useEffect(() => {
     return () => {
@@ -366,7 +398,9 @@ export default function AskCv() {
     } catch (error) {
       console.error(error);
       animateAssistantMessage(
-        "Something went wrong while contacting the CV assistant. Please try again."
+        isArabic
+          ? "حدث خطأ أثناء التواصل مع مساعد السيرة الذاتية. يرجى المحاولة مرة أخرى."
+          : "Something went wrong while contacting the CV assistant. Please try again."
       );
     } finally {
       setLoading(false);
@@ -433,7 +467,7 @@ export default function AskCv() {
                 color: "var(--cv-ink)",
               }}
             >
-              Ask My CV
+              {isArabic ? "اسأل عن سيرتي الذاتية" : "Ask My CV"}
             </h2>
           </div>
 
@@ -446,9 +480,9 @@ export default function AskCv() {
               maxWidth: "720px",
             }}
           >
-            An AI-powered assistant that answers questions about my experience,
-            projects, certifications, and technical background using only my
-            portfolio and CV content.
+            {isArabic
+              ? "مساعد مدعوم بالذكاء الاصطناعي يجيب عن الأسئلة المتعلقة بخبرتي ومشاريعي وشهاداتي وخلفيتي التقنية بالاعتماد فقط على محتوى السيرة الذاتية ومحفظة الأعمال."
+              : "An AI-powered assistant that answers questions about my experience, projects, certifications, and technical background using only my portfolio and CV content."}
           </p>
         </div>
 
@@ -573,7 +607,11 @@ export default function AskCv() {
             }}
           >
             <textarea
-              placeholder="Ask about my experience, projects, skills, or certifications..."
+              placeholder={
+                isArabic
+                  ? "اسأل عن خبرتي أو مشاريعي أو مهاراتي أو شهاداتي..."
+                  : "Ask about my experience, projects, skills, or certifications..."
+              }
               value={message}
               disabled={loading}
               rows={1}

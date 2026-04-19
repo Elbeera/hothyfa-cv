@@ -1,22 +1,28 @@
 "use client";
 
 import Image from "next/image";
+import { useLanguage } from "@/components/language/LanguageProvider";
 
 export default function Hero() {
+    const { language } = useLanguage();
+    const isArabic = language === "ar";
+
     return (
         <section className="px-6 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
             <div className="mx-auto max-w-6xl">
                 <div className="flex flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between">
                     <div className="max-w-3xl">
                         <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
-                            Senior Software Engineer
+                            {isArabic ? "مهندس برمجيات أول" : "Senior Software Engineer"}
                         </p>
 
                         <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-slate-100">
                             Hothyfa Elbeera
                         </h1>
                         <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg dark:text-slate-300">
-                            Currently leading AI-powered document processing work for the UK Ministry of Justice, specialising in production-grade AI workflows, cloud-native systems, and high-trust software delivery.
+                            {isArabic
+                                ? "أقود حالياً تطوير حلول معالجة المستندات المدعومة بالذكاء الاصطناعي لوزارة العدل البريطانية، مع تركيز على سير عمل ذكاء اصطناعي جاهز للإنتاج وأنظمة سحابية موثوقة."
+                                : "Currently leading AI-powered document processing work for the UK Ministry of Justice, specialising in production-grade AI workflows, cloud-native systems, and high-trust software delivery."}
                         </p>
 
                         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -33,7 +39,7 @@ export default function Hero() {
                                     {/* briefcase icon */}
                                     <path d="M7 7V6a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1h2a2 2 0 0 1 2 2v3H3V9a2 2 0 0 1 2-2h2Zm2 0h6V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1Zm12 7v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5h18Zm-11 2v2h4v-2h-4Z" />
                                 </svg>
-                                View Experience
+                                {isArabic ? "عرض الخبرة" : "View Experience"}
                             </a>
 
                             <a
@@ -49,7 +55,7 @@ export default function Hero() {
                                     {/* code / terminal icon */}
                                     <path d="M8.7 16.7a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.4 1.4L5.4 12l3.3 3.3a1 1 0 0 1 0 1.4Zm6.6 0a1 1 0 0 1 0-1.4L18.6 12l-3.3-3.3a1 1 0 1 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4 0Z" />
                                 </svg>
-                                View Projects
+                                {isArabic ? "عرض المشاريع" : "View Projects"}
                             </a>
                         </div>
 
@@ -67,7 +73,7 @@ export default function Hero() {
                                 >
                                     <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
                                 </svg>
-                                Download CV
+                                {isArabic ? "تحميل السيرة الذاتية" : "Download CV"}
                             </a>
 
                             <a
@@ -81,7 +87,7 @@ export default function Hero() {
                                 >
                                     <path d="M4 4h16a2 2 0 0 1 2 2v.01L12 13 2 6.01V6a2 2 0 0 1 2-2Zm0 4.24 7.4 5.18a1 1 0 0 0 1.2 0L20 8.24V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8.24Z" />
                                 </svg>
-                                Email Me
+                                {isArabic ? "راسلني" : "Email Me"}
                             </a>
                         </div>
                     </div>
@@ -99,7 +105,7 @@ export default function Hero() {
                         <div className="mt-4">
                             <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700 dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-200">
                                 <span className="h-2 w-2 rounded-full bg-emerald-500 dark:bg-emerald-400" />
-                                Open to contract roles
+                                {isArabic ? "متاح لفرص تعاقدية" : "Open to contract roles"}
                             </span>
                         </div>
                     </div>

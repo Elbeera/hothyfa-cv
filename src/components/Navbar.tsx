@@ -2,20 +2,36 @@
 
 import { useState } from "react";
 import ThemeToggle from "@/components/theme/ThemeToggle";
+import LanguageToggle from "@/components/language/LanguageToggle";
+import { useLanguage } from "@/components/language/LanguageProvider";
 
-const navItems = [
-    { label: "Ask CV", href: "#ask-cv" },
-    { label: "Summary", href: "#summary" },
-    { label: "Impact", href: "#impact" },
-    { label: "Certifications", href: "#certifications" },
-    { label: "Experience", href: "#experience" },
-    { label: "Strengths", href: "#strengths" },
-    { label: "Projects", href: "#projects" },
-    { label: "Contact", href: "#contact" },
-];
+const navItems = {
+    en: [
+        { label: "Ask CV", href: "#ask-cv" },
+        { label: "Summary", href: "#summary" },
+        { label: "Impact", href: "#impact" },
+        { label: "Certifications", href: "#certifications" },
+        { label: "Experience", href: "#experience" },
+        { label: "Strengths", href: "#strengths" },
+        { label: "Projects", href: "#projects" },
+        { label: "Contact", href: "#contact" },
+    ],
+    ar: [
+        { label: "اسأل السيرة", href: "#ask-cv" },
+        { label: "الملخص", href: "#summary" },
+        { label: "الأثر", href: "#impact" },
+        { label: "الشهادات", href: "#certifications" },
+        { label: "الخبرة", href: "#experience" },
+        { label: "المهارات", href: "#strengths" },
+        { label: "المشاريع", href: "#projects" },
+        { label: "التواصل", href: "#contact" },
+    ],
+};
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const { language } = useLanguage();
+    const items = navItems[language];
 
     const handleLinkClick = () => {
         setIsOpen(false);
@@ -33,7 +49,7 @@ export default function Navbar() {
                     </a>
 
                     <nav className="hidden items-center gap-6 md:flex">
-                        {navItems.map((item) => (
+                        {items.map((item) => (
                             <a
                                 key={item.href}
                                 href={item.href}
@@ -42,6 +58,7 @@ export default function Navbar() {
                                 {item.label}
                             </a>
                         ))}
+                        <LanguageToggle />
                         <ThemeToggle />
                     </nav>
 
@@ -57,13 +74,13 @@ export default function Navbar() {
                             }
                         `}
                     >
-                        Menu
+                        {language === "ar" ? "القائمة" : "Menu"}
                     </button>
                 </div>
 
                 {isOpen && (
                     <nav className="mt-4 flex flex-col gap-2 border-t border-slate-200 pt-4 dark:border-slate-800 md:hidden">
-                        {navItems.map((item) => (
+                        {items.map((item) => (
                             <a
                                 key={item.href}
                                 href={item.href}
@@ -73,7 +90,8 @@ export default function Navbar() {
                                 {item.label}
                             </a>
                         ))}
-                        <div className="px-2 py-2">
+                        <div className="flex items-center gap-2 px-2 py-2">
+                            <LanguageToggle />
                             <ThemeToggle />
                         </div>
                     </nav>
