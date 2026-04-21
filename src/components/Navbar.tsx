@@ -5,9 +5,13 @@ import ThemeToggle from "@/components/theme/ThemeToggle";
 import LanguageToggle from "@/components/language/LanguageToggle";
 import { useLanguage } from "@/components/language/LanguageProvider";
 
+const arTranslations: Record<string, string> = {
+    "Settings": "إعدادات",
+};
+
 const navItems = {
     en: [
-        { label: "Ask CV", href: "#ask-cv" },
+        { label: "Ask my CV", href: "#ask-my-cv" },
         { label: "Summary", href: "#summary" },
         { label: "Impact", href: "#impact" },
         { label: "Certifications", href: "#certifications" },
@@ -17,7 +21,7 @@ const navItems = {
         { label: "Contact", href: "#contact" },
     ],
     ar: [
-        { label: "اسأل السيرة", href: "#ask-cv" },
+        { label: "اسأل السيرة", href: "#ask-my-cv" },
         { label: "الملخص", href: "#summary" },
         { label: "الأثر", href: "#impact" },
         { label: "الشهادات", href: "#certifications" },
@@ -32,6 +36,8 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const { language } = useLanguage();
     const items = navItems[language];
+    const isArabic = language === "ar";
+    const t = (value: string) => (isArabic ? arTranslations[value] ?? value : value);
 
     const handleLinkClick = () => {
         setIsOpen(false);
@@ -58,8 +64,20 @@ export default function Navbar() {
                                 {item.label}
                             </a>
                         ))}
-                        <LanguageToggle />
-                        <ThemeToggle />
+                        <div className="flex flex-col gap-3 sm:flex-row">
+                            <details className="group relative">
+                                <summary
+                                    className="inline-flex list-none items-center justify-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium !text-white shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:shadow-[0_16px_40px_rgba(15,23,42,0.35)] active:translate-y-0 active:scale-[0.98] dark:bg-slate-100 dark:!text-slate-950 dark:hover:bg-white cursor-pointer [&::-webkit-details-marker]:hidden"
+                                >
+                                    {t("Settings")}
+                                </summary>
+                                <div className="absolute z-20 mt-2 min-w-full rounded-xl border border-slate-200 bg-white p-1 shadow-lg dark:border-slate-700 dark:bg-slate-900">
+                                    <LanguageToggle />
+                                    <ThemeToggle />
+                                </div>
+                            </details>
+                        </div>
+
                     </nav>
 
                     <button

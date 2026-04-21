@@ -457,7 +457,7 @@ export default function Home() {
       <Navbar />
       <Hero />
 
-      <Section id="ask-cv" title={t("Ask my CV")}>
+      <Section id="ask-my-cv" title={t("Ask my CV")}>
         <AskCv />
       </Section>
 

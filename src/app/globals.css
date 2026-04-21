@@ -20,7 +20,7 @@ html[lang="ar"] body {
 }
 
 :root {
-  /* Ask CV theme tokens (light = current design) */
+  /* Ask My CV theme tokens (light = current design) */
   --cv-ink: #111111;
   --cv-ink-contrast: #ffffff;
   --cv-muted: #666666;
@@ -33,11 +33,9 @@ html[lang="ar"] body {
 
   --cv-panel-gradient: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
   --cv-header-bg: rgba(255, 255, 255, 0.9);
-  --cv-chat-bg: radial-gradient(
-      circle at top,
+  --cv-chat-bg: radial-gradient(circle at top,
       rgba(0, 0, 0, 0.02),
-      transparent 35%
-    ),
+      transparent 35%),
     #fcfcfc;
 
   --cv-assistant-bubble-bg: #f5f5f5;
@@ -77,7 +75,7 @@ html[lang="ar"] body {
 }
 
 html.dark {
-  /* Ask CV theme tokens (dark) */
+  /* Ask My CV theme tokens (dark) */
   --cv-ink: #f5f5f5;
   --cv-ink-contrast: #0b0b0b;
   --cv-muted: rgba(245, 245, 245, 0.72);
@@ -90,11 +88,9 @@ html.dark {
 
   --cv-panel-gradient: linear-gradient(180deg, #0b1220 0%, #0a0f1c 100%);
   --cv-header-bg: rgba(15, 23, 42, 0.72);
-  --cv-chat-bg: radial-gradient(
-      circle at top,
+  --cv-chat-bg: radial-gradient(circle at top,
       rgba(255, 255, 255, 0.05),
-      transparent 38%
-    ),
+      transparent 38%),
     #070b14;
 
   /* Keep chat polarity recognizable: user = light bubble, assistant = dark bubble */
