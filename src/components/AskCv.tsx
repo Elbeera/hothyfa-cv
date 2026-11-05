@@ -259,25 +259,25 @@ export default function AskCv() {
     () =>
       isArabic
         ? [
-            "مرحبا",
-            "من أنت؟",
-            "كيف يمكنك مساعدتي؟",
-            "من هو هذيفة البعيرة؟",
-            "ما هو مشروع Justice Redact؟",
-            "ما خبرة هذيفة في الذكاء الاصطناعي؟",
-            "هل استخدم Python في بيئات الإنتاج؟",
-            "هل لديه شهادات AWS؟",
-          ]
+          "مرحبا",
+          "من أنت؟",
+          "كيف يمكنك مساعدتي؟",
+          "من هو هذيفة البعيرة؟",
+          "ما هو مشروع Justice Redact؟",
+          "ما خبرة هذيفة في الذكاء الاصطناعي؟",
+          "هل استخدم Python في بيئات الإنتاج؟",
+          "هل لديه شهادات AWS؟",
+        ]
         : [
-            "Hi",
-            "Who are you?",
-            "How can you help me?",
-            "Who is Hothyfa Elbeera?",
-            "What is Justice Redact?",
-            "What AI experience does Hothyfa have?",
-            "Has he used Python in production?",
-            "Does he have AWS certifications?",
-          ],
+          "Hi",
+          "Who are you?",
+          "How can you help me?",
+          "Who is Hothyfa Elbeera?",
+          "What is Justice Redact?",
+          "What AI experience does Hothyfa have?",
+          "Has he used Python in production?",
+          "Does he have AWS certifications?",
+        ],
     [isArabic]
   );
 
@@ -313,19 +313,6 @@ export default function AskCv() {
   }, [messages]);
 
   useEffect(() => {
-    setMessages([
-      {
-        id: "welcome",
-        role: "assistant",
-        content: welcomeMessage,
-        sources: [],
-      },
-    ]);
-    setUsedStarterPrompts(new Set());
-    setMessage("");
-  }, [welcomeMessage]);
-
-  useEffect(() => {
     return () => {
       if (typingIntervalRef.current) clearInterval(typingIntervalRef.current);
     };
@@ -359,11 +346,11 @@ export default function AskCv() {
         prev.map((msg) =>
           msg.id === assistantId
             ? {
-                ...msg,
-                content: fullText.slice(0, index),
-                isTyping: index < fullText.length,
-                sources: index >= fullText.length ? sources : [],
-              }
+              ...msg,
+              content: fullText.slice(0, index),
+              isTyping: index < fullText.length,
+              sources: index >= fullText.length ? sources : [],
+            }
             : msg
         )
       );

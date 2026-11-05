@@ -458,7 +458,7 @@ export default function Home() {
       <Hero />
 
       <Section id="ask-my-cv" title={t("Ask my CV")}>
-        <AskCv />
+        <AskCv key={language} />
       </Section>
 
       <Section id="summary" title={t("Executive Summary")}>

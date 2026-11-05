@@ -26,6 +26,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY);
       if (stored === "ar" || stored === "en") {
+        // Restore the browser-only language preference after hydration.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setLanguageState(stored);
         applyDocumentLanguage(stored);
         return;

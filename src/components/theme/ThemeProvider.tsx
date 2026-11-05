@@ -44,6 +44,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     }
 
     const initial: ThemeMode = stored === "light" || stored === "dark" || stored === "system" ? stored : "system";
+    // Restore the browser-only theme preference after hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setThemeState(initial);
     applyThemeClass(initial);
   }, []);
@@ -62,9 +64,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       return () => mql.removeEventListener("change", handler);
     }
 
-    // eslint-disable-next-line deprecation/deprecation
     mql.addListener(handler);
-    // eslint-disable-next-line deprecation/deprecation
     return () => mql.removeListener(handler);
   }, [theme]);
 
