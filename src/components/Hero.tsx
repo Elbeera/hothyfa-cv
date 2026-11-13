@@ -21,8 +21,8 @@ export default function Hero() {
                         </h1>
                         <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg dark:text-slate-300">
                             {isArabic
-                                ? "أقود حالياً تطوير حلول معالجة المستندات المدعومة بالذكاء الاصطناعي لوزارة العدل البريطانية، مع تركيز على سير عمل ذكاء اصطناعي جاهز للإنتاج وأنظمة سحابية موثوقة."
-                                : "Currently leading AI-powered document processing work for the UK Ministry of Justice, specialising in production-grade AI workflows, cloud-native systems, and high-trust software delivery."}
+                                ? "أعمل على تصميم وتطوير أنظمة سحابية وحلول برمجية مدعومة بالذكاء الاصطناعي. أتولى في وزارة العدل البريطانية المسؤولية الهندسية عن تنفيذ تطبيق Justice Redact، بدءاً من الواجهات الأمامية والخدمات الخلفية وصولاً إلى سير معالجة المستندات الموزعة، بالتعاون مع فرق تقنية متخصصة."
+                                : "I design and deliver cloud-native and AI-enabled software systems. At the UK Ministry of Justice, I am the sole software engineer responsible for the application implementation of Justice Redact, spanning frontend development, backend services and distributed document-processing workflows in collaboration with specialist teams."}
                         </p>
 
                         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -131,7 +131,9 @@ export default function Hero() {
                         <div className="mt-4">
                             <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700 dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-200">
                                 <span className="h-2 w-2 rounded-full bg-emerald-500 dark:bg-emerald-400" />
-                                {isArabic ? "متاح لفرص تعاقدية" : "Open to contract roles"}
+                                {isArabic
+                                    ? "أرحّب بالفرص الهندسية المتقدمة"
+                                    : "Open to senior and principal-level opportunities"}
                             </span>
                         </div>
                     </div>
