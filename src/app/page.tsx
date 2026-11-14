@@ -447,7 +447,6 @@ const certificationItems: TextCard[] = [
     iconPath: "M4 4h16v6H4V4Zm0 8h16v6H4v-6Zm2-6v2h2V6H6Zm0 8v2h2v-2H6Z",
     iconClass: "text-emerald-500",
     iconBgClass: "bg-emerald-50",
-    wide: true,
   },
   {
     title: "BA (Hons) in Business Management",
