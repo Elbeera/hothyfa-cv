@@ -10,14 +10,49 @@ const tajawal = Tajawal({
   variable: "--font-tajawal",
 });
 
+
 export const metadata: Metadata = {
-  title: "Hothyfa | Senior Software Engineer | هذيفة | مهندس برمجيات أول",
+  metadataBase: new URL("https://www.hothyfa.co.uk"),
+
+  title:
+    "Hothyfa Elbeera | Senior Software Engineer | AI-Enabled Systems",
+
+  description:
+    "Hothyfa Elbeera is a Senior Software Engineer with 7+ years of experience in AI-enabled engineering, distributed systems and cloud-native architecture. Currently engineering Justice Redact at the UK Ministry of Justice.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title:
+      "Hothyfa Elbeera | Senior Software Engineer",
+    description:
+      "AI-enabled software engineering, distributed systems and cloud-native architecture. Explore my experience, engineering projects and AI-powered CV Assistant.",
+    url: "https://www.hothyfa.co.uk/",
+    siteName: "Hothyfa Elbeera",
+    locale: "en_GB",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    title:
+      "Hothyfa Elbeera | Senior Software Engineer",
+    description:
+      "AI-enabled engineering, distributed systems and cloud-native architecture.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   icons: {
     icon: "/favicon.png",
   },
-  description:
-    "Senior Software Engineer building scalable web platforms, backend APIs, and AI-assisted systems. | مهندس برمجيات أول يبني منصات ويب قابلة للتوسع وواجهات API خلفية وأنظمة مدعومة بالذكاء الاصطناعي.",
 };
+
 
 export default function RootLayout({
   children,

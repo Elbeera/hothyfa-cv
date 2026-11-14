@@ -156,8 +156,194 @@ const arTranslations: Record<string, string> = {
   Contact: "التواصل",
   "Download CV": "تحميل السيرة الذاتية",
   "Email Me": "راسلني",
-  "I'm open to senior software engineering opportunities where I can contribute through strong technical ownership, scalable system design, and building AI-driven applications in real-world environments.":
-    "أنا متاح لفرص هندسة برمجيات أولى يمكنني من خلالها الإسهام بملكية تقنية قوية وتصميم أنظمة قابلة للتوسع وبناء تطبيقات مدعومة بالذكاء الاصطناعي في بيئات واقعية.",
+  "I'm interested in senior and principal-level software engineering opportunities focused on AI-enabled systems, distributed architectures, cloud-native platforms and end-to-end technical ownership. I bring hands-on experience delivering complex applications and collaborating across engineering, data science, architecture and security teams.":
+    "أهتم بالفرص المهنية في هندسة البرمجيات على مستوى المهندس الأول أو المهندس الرئيسي، ولا سيما الأدوار التي تركز على الأنظمة المدعومة بالذكاء الاصطناعي، والمعماريات الموزعة، والمنصات السحابية، وتحمل المسؤولية التقنية الشاملة. أمتلك خبرة عملية في تطوير تطبيقات معقدة والعمل بالتعاون مع فرق هندسة البرمجيات وعلوم البيانات والمعمارية التقنية وأمن المعلومات.",
+  "BA (Hons) in Business Management":
+    "بكالوريوس الآداب (مع مرتبة الشرف) في إدارة الأعمال",
+  "Education": "التعليم",
+  "Middlesex University. Undergraduate degree in business management, providing a foundation in organisational management and business decision-making.":
+    "جامعة ميدلسكس. درجة جامعية في إدارة الأعمال توفر أساساً معرفياً في الإدارة المؤسسية واتخاذ القرارات الإدارية.",
+  "Education & Certifications": "التعليم والشهادات المهنية",
+
+  "AI & Distributed Systems":
+    "الذكاء الاصطناعي والأنظمة الموزعة",
+
+  "AI-assisted document processing and redaction system at the UK Ministry of Justice. Responsible for application engineering across React, Next.js, Python, FastAPI, NLP integration, AWS SQS, Kubernetes processing workers, persistent review workflows and secure PDF exports.":
+    "نظام لمعالجة المستندات وحجب المعلومات الحساسة بمساعدة الذكاء الاصطناعي في وزارة العدل البريطانية. أتولى هندسة التطبيق باستخدام React وNext.js وPython وFastAPI، ودمج معالجة اللغة الطبيعية (NLP)، وتنسيق المعالجة باستخدام AWS SQS وعمال Kubernetes، وتنفيذ سير مراجعة تُحفَظ حالته وتصدير ملفات PDF بصورة آمنة.",
+
+  "Applied AI & Document Intelligence":
+    "الذكاء الاصطناعي التطبيقي وذكاء المستندات",
+
+  "August 2024 — May 2025":
+    "أغسطس 2024 — مايو 2025",
+
+  "AWS, Azure, Docker, Kubernetes, S3, SQS, RDS, ECR, GitHub Actions and CI/CD. Containerised services, scalable processing, observability and secure deployments.":
+    "خبرة في AWS وAzure وDocker وKubernetes وخدمات S3 وSQS وRDS وECR، إلى جانب GitHub Actions والتكامل والتسليم المستمر (CI/CD). وتشمل تشغيل الخدمات داخل الحاويات، والمعالجة القابلة للتوسع، وقابلية رصد الأنظمة، والنشر الآمن.",
+
+  "Built containerised backend services using Node.js, Express.js and Docker, developing reusable APIs and service components.":
+    "طوّرت خدمات خلفية تعمل داخل حاويات باستخدام Node.js وExpress.js وDocker، وأنشأت واجهات API ومكونات خدمية قابلة لإعادة الاستخدام.",
+
+  "Built reusable APIs supporting ride bookings, delivery management, parcel logistics and operational workflows.":
+    "طوّرت واجهات API قابلة لإعادة الاستخدام لدعم حجز الرحلات وإدارة عمليات التوصيل والخدمات اللوجستية للطرود وسير العمل التشغيلي.",
+
+  "Cloud-Native Delivery & Engineering Quality":
+    "تسليم البرمجيات السحابية وجودة الهندسة البرمجية",
+
+  "Collaborated with DevOps on Docker services, Kubernetes deployments, AWS infrastructure and GitHub Actions pipelines across development and staging environments.":
+    "تعاونت مع فريق DevOps في إعداد الخدمات باستخدام Docker، ونشر التطبيقات عبر Kubernetes، والعمل على بنية AWS التحتية ومسارات GitHub Actions في بيئات التطوير وما قبل الإنتاج.",
+
+  "Contributed across web applications, mobile applications, backend services and infrastructure, including real-time features, secure authentication and deployment automation.":
+    "ساهمت في تطوير تطبيقات الويب والهواتف المحمولة والخدمات الخلفية والبنية التحتية، بما يشمل الوظائف الآنية والمصادقة الآمنة وأتمتة النشر.",
+
+  "Contributed to technical decision-making, system improvements and cross-functional product delivery.":
+    "ساهمت في اتخاذ القرارات التقنية وتحسين الأنظمة وتسليم المنتجات بالتعاون مع فرق متعددة التخصصات.",
+
+  "Currently working as a Senior Full Stack Developer at the UK Ministry of Justice, where I am the sole Software Engineer responsible for the application engineering and technical delivery of Justice Redact. My work spans Python/FastAPI services, React/Next.js development, NLP integration, distributed processing, persistent document workflows, automated testing and secure deployment in a highly regulated environment.":
+    "أعمل حالياً مطوّر برمجيات متكامل أول في وزارة العدل البريطانية، حيث أتولى بصفتي مهندس البرمجيات الوحيد في المشروع المسؤولية عن هندسة تطبيق Justice Redact وتنفيذه وتسليمه تقنياً. يشمل عملي تطوير الخدمات الخلفية باستخدام Python وFastAPI، وتطوير الواجهات باستخدام React وNext.js، ودمج معالجة اللغة الطبيعية، والمعالجة الموزعة، وإدارة سير عمل المستندات مع حفظ حالتها، والاختبارات الآلية، والنشر الآمن في بيئة حكومية تخضع لمتطلبات تنظيمية صارمة.",
+
+  "Designed and deployed a multilingual professional portfolio using Next.js, React, TypeScript and Tailwind CSS on Cloudflare Pages. Built an AI CV Assistant using retrieval-augmented generation, OpenAI embeddings, semantic search and a Cloudflare Workers API with secure secret management and request rate limiting.":
+    "صمّمت ونشرت موقعي المهني متعدد اللغات باستخدام Next.js وReact وTypeScript وTailwind CSS، مع استضافته على Cloudflare Pages. وطوّرت مساعداً ذكياً للسيرة الذاتية يعتمد على التوليد المعزّز بالاسترجاع (RAG)، والتمثيلات المتجهية من OpenAI، والبحث الدلالي، وواجهة API تعمل عبر Cloudflare Workers، مع إدارة آمنة لمفاتيح الوصول وتحديد معدل الطلبات.",
+
+  "Designed and developed web and mobile applications using React, React Native, Node.js, Fastify and MongoDB.":
+    "صمّمت وطوّرت تطبيقات للويب والهواتف المحمولة باستخدام React وReact Native وNode.js وFastify وMongoDB.",
+
+  "Designed and implemented asynchronous document processing using AWS SQS, dedicated Kubernetes workers, PostgreSQL job coordination, retries and dead-letter queues.":
+    "صمّمت ونفّذت معالجة غير متزامنة للمستندات باستخدام AWS SQS وعمال معالجة مخصصين على Kubernetes، مع تنسيق مهام المعالجة عبر PostgreSQL وآليات إعادة المحاولة وقوائم انتظار الرسائل التي تعذّرت معالجتها (Dead-Letter Queues).",
+
+  "Designed and implemented modular REST APIs using NestJS.":
+    "صمّمت ونفّذت واجهات REST API معيارية باستخدام NestJS، بما يدعم تنظيم الخدمات وإعادة استخدام مكوناتها.",
+
+  "Designed application architectures across AWS and Azure with a focus on scalability, reliability and infrastructure cost efficiency.":
+    "صمّمت معماريات تطبيقات على AWS وAzure، مع التركيز على قابلية التوسع والاعتمادية وكفاءة تكاليف البنية التحتية.",
+
+  "Designed asynchronous document processing using AWS SQS, Kubernetes workers, PostgreSQL job coordination, retries and dead-letter queues to support resilient workflows.":
+    "صمّمت معالجة غير متزامنة للمستندات باستخدام AWS SQS وعمال Kubernetes وتنسيق المهام عبر PostgreSQL وآليات إعادة المحاولة وقوائم انتظار الرسائل المتعثرة، لدعم سير عمل قادر على التعامل مع حالات الإخفاق والتعافي منها.",
+
+  "Designed, developed and delivered cloud-native applications for a digital claims management company, contributing to application architecture, backend systems, infrastructure and engineering improvements.":
+    "صمّمت وطوّرت وسلّمت تطبيقات سحابية الأصل لشركة متخصصة في إدارة المطالبات الرقمية، وساهمت في معمارية التطبيقات والأنظمة الخلفية والبنية التحتية والتحسينات الهندسية.",
+
+  "Developed an internal Word-to-PDF document conversion service supporting automated document processing, reducing reliance on external document tooling and supporting more cost-efficient operational workflows.":
+    "طوّرت خدمة داخلية لتحويل مستندات Word إلى PDF لدعم المعالجة الآلية للمستندات، وتقليل الاعتماد على أدوات المستندات الخارجية، والمساهمة في رفع كفاءة التكاليف التشغيلية.",
+
+  "Developed and maintained full-stack applications with an emphasis on backend architecture, API design, database performance, reliability and maintainability.":
+    "طوّرت وصنت تطبيقات متكاملة، مع التركيز على معمارية الأنظمة الخلفية وتصميم واجهات API وأداء قواعد البيانات والاعتمادية وسهولة الصيانة.",
+
+  "Developed automated CI/CD pipelines to improve deployment consistency.":
+    "طوّرت مسارات آلية للتكامل والتسليم المستمر (CI/CD) لتحسين اتساق عمليات النشر.",
+
+  "Developed automated regression tests using Pytest, Vitest and Playwright, covering workflow navigation, concurrent operations, failure handling and document exports.":
+    "طوّرت اختبارات انحدار آلية باستخدام Pytest وVitest وPlaywright، تغطي التنقل بين مراحل سير العمل، والعمليات المتداخلة بالتوازي، والتعامل مع الإخفاقات، وتصدير المستندات.",
+
+  "Developed cloud-native application capabilities using Firebase Functions, Firestore and Vue.js.":
+    "طوّرت وظائف لتطبيقات سحابية الأصل باستخدام Firebase Functions وFirestore وVue.js.",
+
+  "Developed full-stack applications using Angular, TypeScript, Python and Node.js.":
+    "طوّرت تطبيقات متكاملة باستخدام Angular وTypeScript وPython وNode.js.",
+
+  "Developed modular components for PDF extraction, entity recognition, document classification, review-data generation and redaction application.":
+    "طوّرت مكونات برمجية معيارية لاستخراج محتوى ملفات PDF، والتعرف على الكيانات، وتصنيف المستندات، وتوليد بيانات المراجعة، وتطبيق عمليات حجب المعلومات الحساسة.",
+
+  "Developed monitoring and logging capabilities to improve troubleshooting and operational visibility.":
+    "طوّرت إمكانات للمراقبة وتسجيل الأحداث لتحسين تشخيص المشكلات وزيادة وضوح الحالة التشغيلية للأنظمة.",
+
+  "Distributed Processing & Reliability":
+    "المعالجة الموزعة والموثوقية",
+
+  "Document Automation":
+    "أتمتة معالجة المستندات",
+
+  "End-to-End Engineering Ownership":
+    "المسؤولية الهندسية الشاملة",
+
+  "Engineering experience across AWS and Azure, with Docker, Kubernetes, CI/CD, automated testing, structured logging, observability and secure application delivery.":
+    "خبرة هندسية في AWS وAzure، تشمل Docker وKubernetes والتكامل والتسليم المستمر (CI/CD)، والاختبارات الآلية، وتسجيل الأحداث المنظّم، وقابلية رصد الأنظمة، وتسليم التطبيقات بصورة آمنة.",
+
+  "Experienced in taking complex engineering requirements from technical design through implementation and delivery, collaborating with Data Science, DevOps, Architecture, Security, Product and Design teams. Particularly interested in AI systems engineering, intelligent automation, developer productivity and the design of reliable, scalable cloud-native platforms.":
+    "أمتلك خبرة في تحويل المتطلبات الهندسية المعقدة من التصميم التقني إلى التنفيذ والتسليم، بالتعاون مع فرق علوم البيانات وDevOps والمعمارية التقنية وأمن المعلومات وإدارة المنتجات والتصميم. وأهتم بصورة خاصة بهندسة أنظمة الذكاء الاصطناعي والأتمتة الذكية وإنتاجية المطورين وتصميم منصات سحابية موثوقة وقابلة للتوسع.",
+
+  "February 2026 — Present":
+    "فبراير 2026 — حتى الآن",
+
+  "Implemented API validation, secure data handling and encryption best practices.":
+    "نفّذت آليات التحقق من صحة مدخلات واجهات API، وممارسات التعامل الآمن مع البيانات والتشفير.",
+
+  "Implemented authenticated access, user-level document isolation and secure document handling, collaborating with Architecture and Security stakeholders on data protection and governance requirements.":
+    "نفّذت ضوابط وصول تتطلب التحقق من هوية المستخدم، وآليات لعزل مستندات كل مستخدم عن الآخرين والتعامل الآمن مع المستندات، بالتعاون مع المعنيين بالمعمارية التقنية وأمن المعلومات بشأن حماية البيانات ومتطلبات الحوكمة.",
+
+  "Implemented automated deployment processes and CI/CD pipelines.":
+    "نفّذت عمليات نشر آلية ومسارات للتكامل والتسليم المستمر (CI/CD).",
+
+  "Implemented chunk-based document processing and paginated review capabilities to support large PDF documents and reduce unnecessary data transfer.":
+    "نفّذت معالجة المستندات على دفعات، وآليات لاستعراض بيانات المراجعة عبر صفحات متتابعة، لدعم ملفات PDF كبيرة الحجم وتقليل نقل البيانات غير الضروري.",
+
+  "Implemented persistent document lifecycle management, versioned review decisions, asynchronous redaction operations and controlled PDF export generation.":
+    "نفّذت إدارة مستمرة لدورة حياة المستندات مع حفظ حالتها، وتتبع إصدارات قرارات المراجعة، وعمليات حجب المعلومات الحساسة بصورة غير متزامنة، وإنشاء ملفات PDF للتصدير وفق ضوابط محددة.",
+
+  "Implemented real-time tracking, secure authentication and authorisation across platform services.":
+    "نفّذت إمكانات التتبع الآني وآليات المصادقة الآمنة وإدارة صلاحيات الوصول عبر خدمات المنصة.",
+
+  "Implemented structured logging, operational event tracking and failure-handling mechanisms, supporting monitoring through OpenSearch and AWS infrastructure tooling.":
+    "نفّذت تسجيل أحداث منظّماً، وتتبعاً للأحداث التشغيلية، وآليات للتعامل مع الإخفاقات، بما يدعم المراقبة باستخدام OpenSearch وأدوات متابعة بنية AWS التحتية.",
+
+  "Integrated Microsoft Presidio, spaCy, custom entity recognisers and domain-specific post-processing into human-in-the-loop document review workflows, collaborating with Data Science.":
+    "دمجت Microsoft Presidio وspaCy وأدوات مخصصة للتعرف على الكيانات، إلى جانب المعالجة اللاحقة المصممة لطبيعة المستندات، ضمن سير عمل لمراجعة المستندات بمشاركة بشرية، بالتعاون مع فريق علوم البيانات.",
+
+  "Integrated Microsoft Presidio, spaCy, custom entity recognisers and domain-specific processing into secure, human-in-the-loop document review and redaction workflows.":
+    "دمجت Microsoft Presidio وspaCy وأدوات مخصصة للتعرف على الكيانات ومعالجة متخصصة بحسب طبيعة المستندات، ضمن سير عمل آمن لمراجعة المستندات وحجب المعلومات الحساسة مع إشراف بشري.",
+
+  "Integrated push notifications and cross-platform application capabilities.":
+    "دمجت الإشعارات الفورية ووظائف التطبيقات التي تعمل عبر منصات متعددة.",
+
+  "January 2022 — August 2024":
+    "يناير 2022 — أغسطس 2024",
+
+  "June 2025 — February 2026":
+    "يونيو 2025 — فبراير 2026",
+
+  "Lead hands-on engineering across Next.js, React, TypeScript, Python, FastAPI and reusable document-processing components.":
+    "أتولى قيادة التنفيذ الهندسي المباشر باستخدام Next.js وReact وTypeScript وPython وFastAPI، إلى جانب تطوير مكونات قابلة لإعادة الاستخدام لمعالجة المستندات.",
+
+  "Maintained technical documentation covering system architecture, APIs and integrations.":
+    "أعددت وحدّثت التوثيق التقني لمعمارية النظام وواجهات API والتكاملات بين الخدمات.",
+
+  "Microsoft Presidio, spaCy, custom entity recognition, AWS Comprehend integration, document intelligence, human-in-the-loop review, RAG and AI-assisted engineering.":
+    "Microsoft Presidio وspaCy والتعرف على الكيانات باستخدام أدوات مخصصة، ودمج AWS Comprehend، وذكاء المستندات، والمراجعة بمشاركة بشرية، والتوليد المعزّز بالاسترجاع (RAG)، والهندسة البرمجية المدعومة بالذكاء الاصطناعي.",
+
+  "Optimised Microsoft SQL Server queries and T-SQL database interactions to improve processing efficiency.":
+    "حسّنت استعلامات Microsoft SQL Server والتعامل مع قواعد البيانات باستخدام T-SQL لرفع كفاءة المعالجة.",
+
+  "Own end-to-end application engineering across architecture, frontend, backend, reusable processing components, AI integration and automated testing. Collaborate with Product, Data Science, DevOps, Architecture, Security and Design teams to deliver a secure, scalable and maintainable service.":
+    "أتولى المسؤولية الهندسية الشاملة عن التطبيق، بما يشمل المعمارية التقنية والواجهات الأمامية والخدمات الخلفية ومكونات المعالجة القابلة لإعادة الاستخدام ودمج تقنيات الذكاء الاصطناعي والاختبارات الآلية. وأتعاون مع فرق إدارة المنتجات وعلوم البيانات وDevOps والمعمارية التقنية وأمن المعلومات والتصميم لتقديم خدمة آمنة وقابلة للتوسع وسهلة الصيانة.",
+
+  "Produced technical documentation covering API behaviour, system architecture and engineering practices.":
+    "أعددت توثيقاً تقنياً يشرح سلوك واجهات API ومعمارية الأنظمة والممارسات الهندسية المتبعة.",
+
+  "Python, FastAPI, Node.js, NestJS, Express.js and Fastify. Distributed systems, REST APIs, GraphQL, asynchronous processing, event-driven architecture and persistent workflow design.":
+    "Python وFastAPI وNode.js وNestJS وExpress.js وFastify، إلى جانب الأنظمة الموزعة وواجهات REST API وGraphQL والمعالجة غير المتزامنة والمعمارية القائمة على الأحداث وتصميم سير العمل مع حفظ حالته.",
+
+  "RAG & Serverless AI":
+    "التوليد المعزّز بالاسترجاع والذكاء الاصطناعي دون خوادم مخصصة",
+
+  "React, Next.js, TypeScript, Vue.js, Angular and React Native. Experience delivering responsive web interfaces, cross-platform applications and complex user-facing workflows.":
+    "React وNext.js وTypeScript وVue.js وAngular وReact Native. خبرة في تطوير واجهات ويب متجاوبة وتطبيقات متعددة المنصات وسير عمل معقد يتفاعل معه المستخدمون مباشرة.",
+
+  "Senior Full Stack Developer":
+    "مطوّر برمجيات متكامل أول",
+
+  "Senior Software Engineer with 7+ years of experience designing, developing and delivering cloud-native applications, distributed systems and AI-enabled software across AWS and Azure. Strong experience in backend architecture, API design, full-stack engineering, asynchronous processing and secure system delivery.":
+    "مهندس برمجيات أول بخبرة تزيد على سبع سنوات في تصميم وتطوير وتسليم التطبيقات السحابية الأصل والأنظمة الموزعة والحلول البرمجية المدعومة بالذكاء الاصطناعي على AWS وAzure. أمتلك خبرة واسعة في معمارية الأنظمة الخلفية وتصميم واجهات API والهندسة البرمجية المتكاملة والمعالجة غير المتزامنة وتسليم الأنظمة بصورة آمنة.",
+
+  "Sole application engineer for Justice Redact, delivering frontend, backend, processing components, AI integration and testing in collaboration with specialist teams.":
+    "أتولى بصفتي مهندس التطبيق الوحيد في مشروع Justice Redact تنفيذ الواجهات الأمامية والخدمات الخلفية ومكونات المعالجة ودمج تقنيات الذكاء الاصطناعي والاختبارات، بالتعاون مع فرق تقنية متخصصة.",
+
+  "Sole Software Engineer responsible for the application engineering and technical delivery of Justice Redact, an AI-assisted document processing and redaction service designed to help Ministry of Justice staff identify, review and securely redact sensitive information from Subject Access Request documents.":
+    "مهندس البرمجيات الوحيد المسؤول عن هندسة تطبيق Justice Redact وتنفيذه وتسليمه تقنياً. وهو خدمة لمعالجة المستندات وحجب المعلومات الحساسة بمساعدة الذكاء الاصطناعي، صُممت لمساعدة موظفي وزارة العدل البريطانية على اكتشاف المعلومات الحساسة ومراجعتها وحجبها بأمان من مستندات طلبات الوصول إلى البيانات الشخصية.",
+
+  "Worked alongside another Full Stack Developer to build an early-stage multi-service platform supporting ride-hailing, food delivery and parcel logistics.":
+    "عملت إلى جانب مطوّر برمجيات متكامل آخر على بناء منصة متعددة الخدمات في مراحلها الأولى، تدعم طلب سيارات الأجرة وتوصيل الطعام والخدمات اللوجستية للطرود.",
+
+  "Worked across the software delivery lifecycle with an emphasis on scalable APIs, secure data handling, reliable cloud services, operational visibility and infrastructure cost considerations.":
+    "عملت عبر مختلف مراحل دورة تطوير البرمجيات وتسليمها، مع التركيز على واجهات API القابلة للتوسع، والتعامل الآمن مع البيانات، والخدمات السحابية الموثوقة، ووضوح الحالة التشغيلية للأنظمة، ومراعاة تكاليف البنية التحتية.",
 };
 
 type TextCard = {
@@ -180,35 +366,35 @@ type Experience = {
 };
 
 const summaryParagraphs = [
-  "Senior Software Engineer with 6+ years of experience designing and scaling cloud-native, distributed systems across AWS and Azure. Proven track record of leading end-to-end development of high-performance platforms serving thousands of users, delivering measurable improvements in performance, scalability, and cost efficiency.",
-  "Currently leading the development of an AI-powered document processing system within the UK Ministry of Justice, specialising in Natural Language Processing (NLP), intelligent automation, and production-grade AI system design.",
-  "Expert in Node.js, Python, and TypeScript, with strong experience in microservices architectures, DevOps automation, and secure system design. Passionate about building scalable AI-driven systems and transitioning into advanced AI engineering and architecture roles.",
+  "Senior Software Engineer with 7+ years of experience designing, developing and delivering cloud-native applications, distributed systems and AI-enabled software across AWS and Azure. Strong experience in backend architecture, API design, full-stack engineering, asynchronous processing and secure system delivery.",
+  "Currently working as a Senior Full Stack Developer at the UK Ministry of Justice, where I am the sole Software Engineer responsible for the application engineering and technical delivery of Justice Redact. My work spans Python/FastAPI services, React/Next.js development, NLP integration, distributed processing, persistent document workflows, automated testing and secure deployment in a highly regulated environment.",
+  "Experienced in taking complex engineering requirements from technical design through implementation and delivery, collaborating with Data Science, DevOps, Architecture, Security, Product and Design teams. Particularly interested in AI systems engineering, intelligent automation, developer productivity and the design of reliable, scalable cloud-native platforms."
 ];
 
 const impactItems: TextCard[] = [
   {
-    title: "AI-assisted legal document processing",
+    title: "Applied AI & Document Intelligence",
     description:
-      "Leading engineering work on AI-powered document processing and redaction workflows for the UK Ministry of Justice.",
+      "Integrated Microsoft Presidio, spaCy, custom entity recognisers and domain-specific processing into secure, human-in-the-loop document review and redaction workflows.",
     iconPath:
       "M12 4a3 3 0 1 1-2.83 4H7a2 2 0 1 0 0 4h2.17A3 3 0 1 1 12 20a3 3 0 0 1-2.83-4H7a4 4 0 1 1 0-8h2.17A3 3 0 0 1 12 4Z",
   },
   {
-    title: "Sole-engineer ownership",
+    title: "End-to-End Engineering Ownership",
     description:
-      "Driving architecture, backend services, and delivery decisions across a sensitive production-focused system in a high-trust environment.",
+      "Sole application engineer for Justice Redact, delivering frontend, backend, processing components, AI integration and testing in collaboration with specialist teams.",
     iconPath: "M12 2 4 6v6c0 5.2 3.4 9.8 8 11 4.6-1.2 8-5.8 8-11V6l-8-4Z",
   },
   {
-    title: "Backend systems and API delivery",
+    title: "Distributed Processing & Reliability",
     description:
-      "Built production APIs and operational services, including conflict checking across live datasets and multi-funnel business workflows.",
+      "Designed asynchronous document processing using AWS SQS, Kubernetes workers, PostgreSQL job coordination, retries and dead-letter queues to support resilient workflows.",
     iconPath: "M4 4h16v6H4V4Zm0 8h16v6H4v-6Zm2-6v2h2V6H6Zm0 8v2h2v-2H6Z",
   },
   {
-    title: "Cloud-native architecture",
+    title: "Cloud-Native Delivery & Engineering Quality",
     description:
-      "Experience designing scalable systems across AWS and Azure with focus on maintainability, performance, and delivery speed.",
+      "Engineering experience across AWS and Azure, with Docker, Kubernetes, CI/CD, automated testing, structured logging, observability and secure application delivery.",
     iconPath: "M6 19a4 4 0 1 1 .9-7.9A5 5 0 0 1 17.5 9a3.5 3.5 0 1 1 0 7H6Z",
   },
 ];
@@ -261,103 +447,106 @@ const certificationItems: TextCard[] = [
     iconPath: "M4 4h16v6H4V4Zm0 8h16v6H4v-6Zm2-6v2h2V6H6Zm0 8v2h2v-2H6Z",
     iconClass: "text-emerald-500",
     iconBgClass: "bg-emerald-50",
-    wide: true,
+  },
+  {
+    title: "BA (Hons) in Business Management",
+    tag: "Education",
+    description:
+      "Middlesex University. Undergraduate degree in business management, providing a foundation in organisational management and business decision-making.",
+    iconPath:
+      "M12 3 2 9l10 6 10-6-10-6Zm-6 10v5c4 3 8 3 12 0v-5M21 10v7",
+    iconClass: "text-indigo-600",
+    iconBgClass: "bg-indigo-50",
   },
 ];
 
 const experienceItems: Experience[] = [
   {
-    role: "Senior Software Engineer (AI Systems)",
-    period: "2026 — Present",
-    company: "UK Ministry of Justice",
-    summary:
-      "Sole Software Engineer responsible for the design, development, and delivery of Justice Redact, an AI-assisted system for automating the redaction of sensitive information from legal Subject Access Request (SAR) documents. The platform replaces manual redaction workflows with scalable, intelligent document processing, improving efficiency, accuracy, and compliance.",
-    summarySecondary:
-      "Working independently while collaborating with product managers, data scientists, designers, and DevOps specialists, I lead all engineering decisions across system architecture, backend development, and AI integration, ensuring a production-ready and scalable solution.",
-    bullets: [
-      "Led end-to-end engineering of an AI-powered document redaction system, from architecture design to deployment.",
-      "Designed and developed scalable backend services using Python (FastAPI) and Node.js for AI-driven document workflows.",
-      "Built AI-assisted redaction pipelines using PyMuPDF, Microsoft Presidio, and AWS Comprehend to detect and redact sensitive entities.",
-      "Architected a modular system separating backend services from AI processing components, enabling scalability and independent model evolution.",
-      "Designed and implemented data storage strategies using AWS S3 and relational databases for document state, versioning, and audit tracking.",
-      "Developed APIs supporting document ingestion, processing, review workflows, and export functionality.",
-      "Collaborated with data scientists to integrate and optimise NLP models for entity recognition and document classification.",
-      "Ensured strict compliance with data protection, security, and governance standards when handling highly sensitive legal data.",
-      "Conducted performance benchmarking and contributed to infrastructure and cost optimisation strategies.",
-    ],
+    "role": "Senior Full Stack Developer",
+    "period": "February 2026 — Present",
+    "company": "UK Ministry of Justice",
+    "summary": "Sole Software Engineer responsible for the application engineering and technical delivery of Justice Redact, an AI-assisted document processing and redaction service designed to help Ministry of Justice staff identify, review and securely redact sensitive information from Subject Access Request documents.",
+    "summarySecondary": "Own end-to-end application engineering across architecture, frontend, backend, reusable processing components, AI integration and automated testing. Collaborate with Product, Data Science, DevOps, Architecture, Security and Design teams to deliver a secure, scalable and maintainable service.",
+    "bullets": [
+      "Lead hands-on engineering across Next.js, React, TypeScript, Python, FastAPI and reusable document-processing components.",
+      "Designed and implemented asynchronous document processing using AWS SQS, dedicated Kubernetes workers, PostgreSQL job coordination, retries and dead-letter queues.",
+      "Integrated Microsoft Presidio, spaCy, custom entity recognisers and domain-specific post-processing into human-in-the-loop document review workflows, collaborating with Data Science.",
+      "Developed modular components for PDF extraction, entity recognition, document classification, review-data generation and redaction application.",
+      "Implemented persistent document lifecycle management, versioned review decisions, asynchronous redaction operations and controlled PDF export generation.",
+      "Implemented chunk-based document processing and paginated review capabilities to support large PDF documents and reduce unnecessary data transfer.",
+      "Developed automated regression tests using Pytest, Vitest and Playwright, covering workflow navigation, concurrent operations, failure handling and document exports.",
+      "Implemented structured logging, operational event tracking and failure-handling mechanisms, supporting monitoring through OpenSearch and AWS infrastructure tooling.",
+      "Implemented authenticated access, user-level document isolation and secure document handling, collaborating with Architecture and Security stakeholders on data protection and governance requirements.",
+      "Collaborated with DevOps on Docker services, Kubernetes deployments, AWS infrastructure and GitHub Actions pipelines across development and staging environments."
+    ]
   },
   {
-    role: "Software Engineer",
-    period: "2025 — 2026",
-    company: "Claims Gate",
-    summary:
-      "Joined a fast-scaling software company focused on digital claim management solutions, leading end-to-end development of core products from concept through architecture and deployment.",
-    summarySecondary:
-      "Led design and technology decisions while collaborating with cross-functional teams to optimise systems and deliver reliably.",
-    bullets: [
-      "Designed and implemented scalable, cost-optimised architectures across AWS and Azure.",
-      "Designed APIs with strict validation and encryption best practices.",
-      "Designed and deployed Docker-based microservices in Node.js, improving scalability and reliability.",
-      "Built cloud-native applications with Node.js, Express, Firebase Functions, and Firestore for secure API-driven systems.",
-      "Used Vue.js for dynamic, performant frontend development.",
-      "Implemented monitoring and logging to proactively identify system issues.",
-    ],
+    "role": "Full Stack Developer",
+    "period": "June 2025 — February 2026",
+    "company": "Claimsgate",
+    "summary": "Designed, developed and delivered cloud-native applications for a digital claims management company, contributing to application architecture, backend systems, infrastructure and engineering improvements.",
+    "summarySecondary": "Worked across the software delivery lifecycle with an emphasis on scalable APIs, secure data handling, reliable cloud services, operational visibility and infrastructure cost considerations.",
+    "bullets": [
+      "Designed application architectures across AWS and Azure with a focus on scalability, reliability and infrastructure cost efficiency.",
+      "Built containerised backend services using Node.js, Express.js and Docker, developing reusable APIs and service components.",
+      "Developed cloud-native application capabilities using Firebase Functions, Firestore and Vue.js.",
+      "Implemented API validation, secure data handling and encryption best practices.",
+      "Developed monitoring and logging capabilities to improve troubleshooting and operational visibility.",
+      "Contributed to technical decision-making, system improvements and cross-functional product delivery."
+    ]
   },
   {
-    role: "Full Stack Developer",
-    period: "2024 — 2025",
-    company: "Shoory",
-    summary:
-      "Key contributor at an early-stage startup building a multi-service platform for ride hailing, food delivery, and parcel logistics.",
-    summarySecondary:
-      "Built both web and mobile applications, implemented real-time tracking, secure authentication, and CI/CD pipelines.",
-    bullets: [
-      "Designed and developed a multi-service platform using React, React Native, Node.js, Fastify, and MongoDB.",
-      "Implemented secure authentication, authorisation, and data protection mechanisms.",
-      "Built and deployed real-time tracking systems.",
-      "Developed cross-platform web and mobile applications.",
-      "Integrated push notification services to improve retention and engagement.",
-      "Developed automated CI/CD pipelines and maintained technical documentation.",
-    ],
+    "role": "Full Stack Developer",
+    "period": "August 2024 — May 2025",
+    "company": "Shoory",
+    "summary": "Worked alongside another Full Stack Developer to build an early-stage multi-service platform supporting ride-hailing, food delivery and parcel logistics.",
+    "summarySecondary": "Contributed across web applications, mobile applications, backend services and infrastructure, including real-time features, secure authentication and deployment automation.",
+    "bullets": [
+      "Designed and developed web and mobile applications using React, React Native, Node.js, Fastify and MongoDB.",
+      "Built reusable APIs supporting ride bookings, delivery management, parcel logistics and operational workflows.",
+      "Implemented real-time tracking, secure authentication and authorisation across platform services.",
+      "Integrated push notifications and cross-platform application capabilities.",
+      "Developed automated CI/CD pipelines to improve deployment consistency.",
+      "Maintained technical documentation covering system architecture, APIs and integrations."
+    ]
   },
   {
-    role: "Full Stack Developer",
-    period: "2022 — 2024",
-    company: "Union Realtime",
-    summary:
-      "Played a key role in developing and optimising scalable applications using Angular, TypeScript, and Python with focus on reliability and maintainability.",
-    bullets: [
-      "Developed and optimised software using Angular, TypeScript, Python, and Node.js.",
-      "Designed and implemented REST APIs with Nest.js.",
-      "Optimised T-SQL database queries to improve efficiency and response times.",
-      "Implemented CI/CD pipelines and automated deployment processes.",
-      "Created and maintained technical documentation for API usage and system design.",
-    ],
-  },
+    "role": "Full Stack Developer",
+    "period": "January 2022 — August 2024",
+    "company": "Union Realtime",
+    "summary": "Developed and maintained full-stack applications with an emphasis on backend architecture, API design, database performance, reliability and maintainability.",
+    "bullets": [
+      "Developed full-stack applications using Angular, TypeScript, Python and Node.js.",
+      "Designed and implemented modular REST APIs using NestJS.",
+      "Optimised Microsoft SQL Server queries and T-SQL database interactions to improve processing efficiency.",
+      "Implemented automated deployment processes and CI/CD pipelines.",
+      "Produced technical documentation covering API behaviour, system architecture and engineering practices."
+    ]
+  }
 ];
 
 const projectItems: TextCard[] = [
   {
     title: "Justice Redact",
-    tag: "AI Workflow",
+    tag: "AI & Distributed Systems",
     description:
-      "AI-assisted SAR redaction platform for sensitive legal workflows, covering ingestion, entity detection, review tooling, manual control, and export support.",
+      "AI-assisted document processing and redaction system at the UK Ministry of Justice. Responsible for application engineering across React, Next.js, Python, FastAPI, NLP integration, AWS SQS, Kubernetes processing workers, persistent review workflows and secure PDF exports.",
     iconPath: "M7 3h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm6 1.5V9h4.5",
   },
   {
     title: "ClaimsGate Document Engine",
-    tag: "Cost Saving",
+    tag: "Document Automation",
     description:
-      "Internal document conversion service that transformed Word files to PDF at scale, helping reduce Adobe-related costs by up to £15,000 per month.",
+      "Developed an internal Word-to-PDF document conversion service supporting automated document processing, reducing reliance on external document tooling and supporting more cost-efficient operational workflows.",
     iconPath: "M6 3h9l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm8 1.5V7h2.5M8 11h8v2H8v-2Zm0 4h8v2H8v-2Z",
     iconClass: "text-emerald-600",
     iconBgClass: "bg-emerald-50",
   },
   {
     title: "CV Website & AI Assistant",
-    tag: "Portfolio Platform",
+    tag: "RAG & Serverless AI",
     description:
-      "Built and deployed this multilingual CV website using Next.js, React, TypeScript, and Tailwind CSS, with responsive sections, theme/language toggles, and a production-ready UI architecture. Includes an AI-powered CV assistant integrated with backend APIs and deployed AWS cloud infrastructure for reliable performance and secure delivery.",
+      "Designed and deployed a multilingual professional portfolio using Next.js, React, TypeScript and Tailwind CSS on Cloudflare Pages. Built an AI CV Assistant using retrieval-augmented generation, OpenAI embeddings, semantic search and a Cloudflare Workers API with secure secret management and request rate limiting.",
     iconPath:
       "M4 5h16v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Zm2 2v9h12V7H6Zm5 12h2v2h-2v-2Z",
     iconClass: "text-indigo-600",
@@ -369,25 +558,25 @@ const strengthItems: TextCard[] = [
   {
     title: "Frontend Systems",
     description:
-      "React, Next.js, TypeScript, responsive UI engineering, user-focused interfaces, and modern frontend delivery.",
+      "React, Next.js, TypeScript, Vue.js, Angular and React Native. Experience delivering responsive web interfaces, cross-platform applications and complex user-facing workflows.",
     iconPath: "M4 5h16v10H4V5Zm2 2v6h12V7H6Zm3 10h6v2H9v-2Z",
   },
   {
     title: "Backend & APIs",
     description:
-      "Node.js, Python, FastAPI, REST APIs, service design, data workflows, and production-oriented backend engineering.",
+      "Python, FastAPI, Node.js, NestJS, Express.js and Fastify. Distributed systems, REST APIs, GraphQL, asynchronous processing, event-driven architecture and persistent workflow design.",
     iconPath: "M4 4h16v6H4V4Zm0 8h16v6H4v-6Zm2-6v2h2V6H6Zm0 8v2h2v-2H6Z",
   },
   {
     title: "Cloud & Delivery",
     description:
-      "AWS, CI/CD, deployment pipelines, infrastructure awareness, and pragmatic decisions around delivery and maintainability.",
+      "AWS, Azure, Docker, Kubernetes, S3, SQS, RDS, ECR, GitHub Actions and CI/CD. Containerised services, scalable processing, observability and secure deployments.",
     iconPath: "M6 19a4 4 0 1 1 .9-7.9A5 5 0 0 1 17.5 9a3.5 3.5 0 1 1 0 7H6Z",
   },
   {
     title: "AI-Assisted Workflows",
     description:
-      "Document intelligence, redaction workflows, entity detection, human review tooling, and workflow automation support.",
+      "Microsoft Presidio, spaCy, custom entity recognition, AWS Comprehend integration, document intelligence, human-in-the-loop review, RAG and AI-assisted engineering.",
     iconPath: "M12 4a3 3 0 1 1-2.8 4H7a2 2 0 1 0 0 4h2.2A3 3 0 1 1 12 20a3 3 0 0 1-2.8-4H7a4 4 0 1 1 0-8h2.2A3 3 0 0 1 12 4Z",
   },
 ];
@@ -479,7 +668,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="certifications" title={t("Certifications")}>
+      <Section id="certifications" title={t("Education & Certifications")}>
         <div className="grid gap-4 sm:grid-cols-2">
           {certificationItems.map((item) => (
             <InfoCard key={item.title} item={item} t={t} />
@@ -530,7 +719,7 @@ export default function Home() {
         <div className="max-w-3xl space-y-6">
           <p className="text-base leading-7 text-slate-700 sm:text-lg dark:text-slate-300">
             {t(
-              "I'm open to senior software engineering opportunities where I can contribute through strong technical ownership, scalable system design, and building AI-driven applications in real-world environments."
+              "I'm interested in senior and principal-level software engineering opportunities focused on AI-enabled systems, distributed architectures, cloud-native platforms and end-to-end technical ownership. I bring hands-on experience delivering complex applications and collaborating across engineering, data science, architecture and security teams."
             )}
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
